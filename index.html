@@ -1,210 +1,732 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Adriana Babakanian</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-        </script>
-        <script src = "assets/js/script.js"></script>
-    </head>
-    <body>
+<head>
+  <title> Adriana Babakanian </title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Muli">
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Puritan">
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=PT-Serif">
+<body>
 
-        <div id="navbar">
-          <div id="popover1"></div>
-          <div id="sidebar">
-                <div id="holder">
-                  <div class="icon" id="email">
-                      <img src="assets/images/email3.png" class="image">
-                  </div>
+  <div class="menu">
+    <div class="menu-logo"><img src="logo2.png"></div>
+    <div class="section-wrap">
+      <div class="section clickable" id="graphicmenu"><p> Design </p> <div class="liner"></div></div><br/>
+      <div class="section clickable" id="codemenu"><p> Code </p> <div class="liner"></div> </div><br/>
+      <div class="section clickable" id="artmenu"><p> Fine Art </p> <div class="liner"></div> </div><br/>
+      <div class="section clickable" id="aboutmenu"><p> About </p> <div class="liner"></div> </div><br/>
+    </div>
+    <div class="divider"></div>
+    <div class="contact-wrap">
+        <div class="menu-contact-wrapper">
+          <a href="https://www.behance.net/adrianababakanian" target="_blank">
+            <div class="menu-contact">
+              <div class="menu-hide"><img style="z-index:100" src="be3flip.png"></div>
+              <div class="menu-flip"><img style="z-index:200" src="be2.png"></div>
+              <div class="menu-circle"></div>
+            </div>
+          </a>
+        </div>
+        <div class="menu-contact-wrapper">
+          <a href="https://www.pinterest.com/ababakanian/" target="_blank">
+            <div class="menu-contact">
+              <div class="menu-hide"><img style="z-index:100" src="pin3flip.png"></div>
+              <div class="menu-flip"><img style="z-index:200" src="pin2.png"></div>
+              <div class="menu-circle"></div>
+            </div>
+          </a>
+        </div>
+        <div class="menu-contact-wrapper">
+          <a href="https://github.com/adrianababakanian" target="_blank">
+            <div class="menu-contact">
+              <div class="menu-hide"><img style="z-index:100"src="git3flip.png"></div>
+              <div class="menu-flip"><img style="z-index:200" src="git2.png"></div>
+              <div class="menu-circle"></div>
+            </div>
+          </a>
+        </div>
+        <div class="menu-contact-wrapper">
+          <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
+            <div class="menu-contact">
+              <div class="menu-hide"><img style="z-index:100" src="in3flip.png"></div>
+              <div class="menu-flip"><img style="z-index:200" src="in2.png"></div>
+              <div class="menu-circle"></div>
+            </div>
+          </a>
+        </div>
+        <div class="menu-contact-wrapper" id="last">
+          <a href="mailto:ababakanian@berkeley.edu" target="_blank">
+            <div class="menu-contact">
+              <div class="menu-hide"><img style="z-index:100" src="mail3flip.png"></div>
+              <div class="menu-flip"><img style="z-index:200" src="mail2.png"></div>
+              <div class="menu-circle"></div>
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="hider"></div>
+
+  <div class="closer clickable" id="graphiccloser"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="codecloser"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="artcloser"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="aboutcloser"><img src="xwhite.png" class="x xwhite"></div>
+
+  <div class="sectionpop" id="graphicpop">
+    <div class="sectionwrap">
+      <div class="workstitle">
+        <h1> Design </h1>
+        <p> Click to explore my projects, sketches, and doodles. </p>
+      </div>
+      <div class="workswrap">
+        <div class="work feasterwork">
+          <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
+          <img src="feaster4.png">
+        </div>
+        <div class="work buildingswork" id="map">
+          <div class="workcover">Map of Berkeley | Graphic Design</div>
+          <img src="map2.png" class="hor">
+        </div>
+        <div class="work innowork">
+          <div class="workcover">Innovative Design | Marketing Design</div>
+          <img src="flyer.png">
+        </div>
+        <div class="work gdwork" id="last">
+          <div class="workcover">Graphic Design & Illustration</div>
+          <img src="gd2.png">
+        </div>
+        <div class="work personalwork">
+          <div class="workcover">Laud'em | UI/UX & Branding Design</div>
+          <img src="laud2.png">
+        </div>
+        <div class="work weatherwork" id="last">
+          <div class="workcover">WeatherOrNot | Visual Design</div>
+          <img src="weather.png" class="ver">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sectionpop" id="codepop">
+    <div class="workstitle">
+      <h1> Code </h1>
+      <p> Click to explore some of my sites and webapps. </p>
+    </div>
+    <div class="workswrap">
+      <div class="work weathercodework">
+        <div class="workcover">WeatherOrNot</div>
+        <img src="marketing.png">
+      </div>
+      <div class="work feastercodework" id="last">
+        <div class="workcover">Feaster Landing Page</div>
+        <img src="dragon.png">
+      </div>
+      <div class="work personalcodework">
+        <div class="workcover">Personal Site Iteration</div>
+        <img src="buildings.png" class="hor">
+      </div>
+    </div>
+  </div>
+
+  <div class="sectionpop" id="artpop">
+    <div class="workstitle">
+      <h1> Fine Art </h1>
+      <p> Click to explore some of my paintings, mixed media compositions, and other fine art works. </p>
+    </div>
+    <div class="workswrap">
+      <div class="work">
+        <div class="workcover">Alice In Wonderland</div>
+        <img src="arts.png" class="hor">
+      </div>
+      <div class="work" id="last">
+        <div class="workcover">hello</div>
+        <img src="wood.png" class="hor">
+      </div>
+      <div class="work">
+        <div class="workcover">hello</div>
+        <img src="robot.png" class="hor">
+      </div>
+      <div class="work" id="last">
+        <div class="workcover">hello</div>
+        <img src="dragon.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="sectionpop" id="aboutpop">
+    <div class="about-wrapper">
+      <div class="aboutdiv aboutphoto"></div>
+      <div class="aboutdiv aboutcontent">
+        <div class="cursive"> <b>Hi there!</b> </div>
+        <h1 style="margin-top: 20px"> Adriana Babakanian </h1>
+        <div class="divide"></div>
+        <h3> I'm a second year Regents' Scholar at UC Berkeley pursuing
+          a double major in Applied Mathematics & Computer Science. I have a keen passion for creating, especially when it comes to things
+          that lie at the intersection of design and technology.
+        </h3>
+        <p style="margin-top:40px"> I love doodling on my drawing tablet, developing websites, roaming around San Francisco with a pack of instant film,
+          eating carne asada fries, and going on beachside hikes with my dog Holly. </p>
+        <p>
+          Branding, Marketing, & UI/UX Designer at <a href="https://www.feasterworks.com" target="_blank">Feaster</a> </br>
+          <a href="http://innovativedesign.club/" target="_blank"> Innovative Design</a>, Marketing & Gold Tier </br>
+          UI/UX & Branding Designer at Laud'Em
+        </p>
+        <p> <b>Web Development &nbsp &nbsp &nbsp </b> Ruby on Rails | HTML | CSS | JavaScript </br>
+        <b>Programming &nbsp &nbsp &nbsp </b> Java | Python | Ruby | C (in progress)</br>
+        <b>Graphic Design &nbsp &nbsp &nbsp </b> Illustrator | Photoshop | InDesign | Sketch </p>
+        <div class="contact-wrapabout">
+            <div class="menu-contact-wrapperabout">
+              <a href="https://www.behance.net/adrianababakanian" target="_blank">
+                <div class="menu-contactabout">
+                  <div class="menu-hideabout"><img style="z-index:100" src="be3flip.png"></div>
+                  <div class="menu-flipabout"><img style="z-index:200" src="be2.png"></div>
+                  <div class="menu-circleabout"></div>
                 </div>
-                <div id="holder">
-                  <div class="icon">
-                      <img src="assets/images/phone3.png" id="phone">
-                  </div>
+              </a>
+            </div>
+            <div class="menu-contact-wrapperabout">
+              <a href="https://www.pinterest.com/ababakanian/" target="_blank">
+                <div class="menu-contactabout">
+                  <div class="menu-hideabout"><img style="z-index:100" src="pin3flip.png"></div>
+                  <div class="menu-flipabout"><img style="z-index:200" src="pin2.png"></div>
+                  <div class="menu-circleabout"></div>
                 </div>
-                <div id="holder">
-                  <div class="icon">
-                      <img src="assets/images/mail3.png" id="mail">
-                  </div>
+              </a>
+            </div>
+            <div class="menu-contact-wrapperabout">
+              <a href="https://github.com/adrianababakanian" target="_blank">
+                <div class="menu-contactabout">
+                  <div class="menu-hideabout"><img style="z-index:100"src="git3flip.png"></div>
+                  <div class="menu-flipabout"><img style="z-index:200" src="git2.png"></div>
+                  <div class="menu-circleabout"></div>
                 </div>
+              </a>
+            </div>
+            <div class="menu-contact-wrapperabout">
+              <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
+                <div class="menu-contactabout">
+                  <div class="menu-hideabout"><img style="z-index:100" src="in3flip.png"></div>
+                  <div class="menu-flipabout"><img style="z-index:200" src="in2.png"></div>
+                  <div class="menu-circleabout"></div>
+                </div>
+              </a>
+            </div>
+            <div class="menu-contact-wrapperabout" id="last">
+              <a href="mailto:ababakanian@berkeley.edu" target="_blank">
+                <div class="menu-contactabout">
+                  <div class="menu-hideabout"><img style="z-index:100" src="mail3flip.png"></div>
+                  <div class="menu-flipabout"><img style="z-index:200" src="mail2.png"></div>
+                  <div class="menu-circleabout"></div>
+                </div>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- detail section about a specific project or work -->
+  <div class="workpop" id="feasterpop">
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="workcontent intro">
+      <h1> Feaster </h1>
+      <p> Over the past 8 months, I have been working with <a href="https://www.feasterworks.com/" target="_blank">Feaster</a>, a digital marketing platform
+        that provides users with custom deals and offers on local food and drink on <a href="https://www.getfeaster.com/" target="_blank">Facebook Messenger</a>. Through Feaster I have
+        had the opportunity to fully create and execute a visual identity, marketing materials,
+        a landing page, and more for a project that I am very excited and honored to be an integral component of.
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="feaster6.png"></div></div>
+    <div class="workcontent">
+      <p> <em> <b> Please note that all materials here are copyright and property of Feaster, Inc.
+      Please visit out landing page for more information. </b> </em> </p>
+      <h2> Logo Iterations </h2>
+      <p> My first task as a member of the Feaster team was to develop a logo to fuel all of our
+        branding identity. My goal was to communicate to the user the key features that the bot delivers -- that is,
+        an optimal way to receive personalized deals on local food and drink while saving money. </p>
+      <p> I started off by brainstorming with some rather cliche illustrations iconic of eating and savings,
+        and trying to find a way to combine them. </p>
+    </div>
+      <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+      <div class="caption"> <p><em> Some of the brainstorming process behind the Feaster logo. </em> </p></div>
+      <div class="workcontent">
+        <p> After some more brainstorming, I came up with the idea of a piggy bank. Pigs are iconic of eating,
+          and piggy banks are iconic of saving. I decided to add a fork and spoon on the surface of the piggy bank
+          to empahsize the use of this bank as a place for storing the savings a user would garner
+          by using Feaster. </p>
+        <p> I am very proud to present the final product. <p>
+      </div>
+      <div class="introimage-wrapper"><div class="introimage"></div></div>
+      <div class="caption"> <p> <em> The final version of Feaster's logo </em> </p></div>
+      <div class="workcontent">
+        <h2> Logo Text Iterations </h2>
+        <p> My next task was to decide on the way in which we wanted to present our logo text. I experimented with
+          countless fonts and styles, but nothinq quite clikced. After endless searching to find the right font to convey
+          the feel I wanted to, I ended up lettering the text on my tablet. </p>
+      </div>
+      <div class="introimage-wrapper"><div class="introimage"></div></div>
+      <div class="caption"> <p> <em> The final version of Feaster's logo. </em> </p></div>
+      <div class="workcontent">
+        <h2> Site Layout </h2>
+        <p> Before introducing the Feaster platform to businesses, we had to create a landing page to
+          use as a way to communicate our messages to owners and employees.
+          As a web developer, I loved being able to design and help implement the landing page.
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="workpop" id="buildingspop">
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="workcontent intro">
+      <h1> Map of Berkeley </h1>
+      <p> I love the architecture of my school. It somehow manages to be simultanously ecelectic and cohesive, and never fails to inspire me
+        regardless of how many times I walk through campus on my way to lecture or leave a building after a not-so-fun midterm. Because of it's beauty
+        I decided to make an illustrated map of UC Berkeley. Below are some of the buildings I have completed so far -- check back soon to see more of
+        our beautiful architecture and the final
+        version of the map! </p>
+      </menu>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage map"><img src="map2.png"></div></div>
+    <div class="workcontent"><h2> Doe Library </h2></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="doe.png"></div></div>
+    <div class="workcontent"><h2> Hearst Memorial Mining Building </h2></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="hearst.png"></div></div>
+    <div class="workcontent"><h2> Campanile </h2></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="camp2.png"></div></div>
+    <div class="workcontent"><h2> Sather Gate </h2></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="sather.png"></div></div>
+  </div>
+
+  <div class="workpop" id="gdpop">
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="workcontent intro">
+      <h1> Graphic Design </h1>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="designs3.png"></div></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="cam.png"></div></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="avocado.png"></div></div>
+  </div>
+
+  <div class="workpop" id="innopop">
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="workcontent intro">
+      <h1> Innovative Design </h1>
+      <p> I joined <a href="http://innovativedesign.club/" target="_blank"> Innovative Design</a> during my Spring semester of my freshman
+        year at Cal. We are a group of creative students with the ultimate goal of making Berkeley beautiful! InnoD is organized into different tiers --
+        graphic design, photography, videography, and web design. These past two semesters, I have been a part of a graphic design tier called Gold Tier.
+        This semster, I am very excited to be on InnoD's Marketing Tier. Our client is InnoD itself -- we create marketing materials for club recruitement
+        campaigns, club events such as our <a href="http://hex.innovativedesign.club/" target="_blank"> HEX Workshops</a>
+        and <a href="http://cmyk.innovativedesign.club/" target="_blank"> CMYK Designathon</a>, and more. </p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="coverphoto.png" class="hor"></div></div>
+  </div>
+
+  <div class="workpop" id="weatherpop">
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent">
+      <h1> WeatherOrNot </h1>
+    </div>
+  </div>
+
+  <div class="workpop" id="personalpop">
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent">
+      <h1> Personal Branding </h1>
+    </div>
+  </div>
+
+  <div class="workpop" id="weathercodepop">
+    <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
+    <div class="workcontent intro">
+      <h1> WeatherOrNot </h1>
+      <p> This project is a Rails webapp called WeatherOrNot, an applictaion that uses user feedback forms to create for users
+        personalized suggestions about what to wear based on the weather for the current day. The inspiration behind the app is that, rather often,
+        the same weather conditions feel quite different for different people. WeatherOrNot is a way for users to always know how to dress prepared
+        without having to take time out of their morning rotinues. </p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent">
+      <h2 class="tech"> Technologies: Ruby on Rails, Sass, Twitter Bootstrap </h2>
+      <p> This past semester I took a course about Ruby on Rails. The course covered many of the integral features and powers
+        of the "Rails magic," and I loved it so much that I have started working on developing some side projects on my own
+        using the Rails framework. (In fact, I have gotten so used to firing up the Rails server that I initially developed this
+        site in Rails and then converted it to pure HTML/CSS/JS to put up on Github pages.) Rails is the first backend framework that I have worked
+        with, and it has deinitely inspired me to continue exploring backend development. </p>
+      <p> WeatherOrNot began as my final group project for the Rails course mentioned above. My project parteners were Anne Lin and Michelle Han.
+        After the semester completed, I forked our project repo and continued to work on the app on my own. As of now, it is still a work in progres. A few of the features
+        I have implemented and am in the process of implementing are: <p>
+          <ul>
+            <li> AJAX calls to a Weather API in order to gather realtime weather stats (previously, I seeded the database with random weather instances.
+              The user can select if they want to see real data or random data to play around with more diverse weather conditions.) </li>
+            <li> Integrated Bootstrap in order to add to the styling I previously implemented with vanilla CSS. </li>
+            <li> Improved the UI of the daily feedback forms. </li>
+            <li> Added a calendar which users can use to access and edit their feedback forms from previous days </li>
+          </ul>
+      <p> Please be sure to check back soon to see the final version of the app once I put it up on Heroku! </p>
+      <h2> I
+    </div>
+  </div>
+
+  <div class="workpop" id="feastercodepop">
+    <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent">
+      <h1> Feaster Landing Page </h1>
+    </div>
+  </div>
+
+  <div class="workpop" id="personalcodepop">
+    <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
+    <div class="workcontent">
+      <h1> Personal Site Iteration </h1>
+      <p> I for some reason decided that it would be a good idea to build up a personal site from sratch -- no Bootstrap templates,
+        no framerworks, just a blank HTML document with equally blank stylesheets and scripts. Although I am aware that all of the resources for
+        developers out there renders this approach rather impratical, I am very glad that I did it. I've never been more confident in my understanding
+        of HTML, CSS, and JavaScript, and it was a lot of fun and extremely rewarding to be able to StackOverflow my way through every obstacle that I
+        encountered and end up with a product that is completely my own! </p>
+      <p> <em> Note: for now, please fullscreen your browser, since I am in the process of optimizing the responsiveness of the homepage! </em> </p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent intro">
+      <h2 class="tech"> Technologies: HTML, CSS, JavaScript, Sass </h2>
+      <p> During my first semester of college, I took a course called <em> The Web Design Decal </em>. It was in this class that I was first exposed to
+        the basics of web development. I fell in love immediately. I have been wanting to code up a personal site ever since, and I am very happy to share the
+        final result! </p>
+      <h2 class="tech"> The Process </h2>
+      <p> My ultimate goal with this site was to create something that fits with my style as both a designer and developer. This site isn't just a place
+        to showcase my projects, but also one of my projects itself. </p>
+      <p> I started off by defining my color palette, settig up a layout, and choosing fonts. I also made some fun icons that pop up throughtout the site,
+        adding an element of interactiveness to make the site more than just a static portfolio.</p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"></div></div>
+    <div class="workcontent">
+      <p> The layout I started out with was a very basic one. I had a standard navbar dividing the site up into a few
+        different categories, and clicking on each link led to a different page. After implementing this layout, I
+        got pretty bored of looking at it. I wanted instead something that was a bit more fluid, a bit more interactive,
+        and a lot more fun. So I decide to reimplement the layout into a one page site </p>
+      <p> Currently, all of the content is "stored" either off to the side or at the bottom of the viewport. I implemented page
+        transitions using a combination of CSS and jQuery animations. A menu is also "stored" to the left of the viewport, which
+        a visitor to my site can also use to navigate from section to section. </p>
+      <h2 class="tech"> Conclusion </h2>
+      <p> I had a lot of fun implementing this site. I feel so much more confident in not only my web devleopment abilities,
+        but also my problem-solving abilities in both coding and learning in general. </p>
+      <p> I'm happy to say that I was able to create a product that feels very "me," and I'm now even more exited to keep
+        learning and developing. </p>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+  <div class="nav">
+    <div class="nav-copy"></div>
+    <div class="under clickable" id="nav-menu"> Menu <div class="under-line"></div></div>
+    <div class="under clickable" id="nav-about"> About <div class="under-line"></div></div>
+    <a href="home/index" class="nav-logo nav-logo-center">
+        <img src="logo2.png">
+    </a>
+  </div>
+  <div class="navbar">
+  </div>
+
+  <div class="fix">
+    <div class="h-wrap" id="fixed">
+      <div class="h-box h-text" id="fixed-h"> <b>all design</b> </div>
+      <div class="h-box h-back" id="fixed-h"></div>
+    </div>
+    <div class="h-wrap" id="fixed">
+      <div class="h-box h-text" id="fixed-h"> <b>all code</b> </div>
+      <div class="h-box h-back" id="fixed-h"></div>
+    </div>
+  </div>
+
+  <div id="wrap">
+      <div id="hello">
+        <div class="color-box clickable">
+          <div id="laptop"><img src="laptop.png"></div>
+          <div id="tea"><img src="tea.png"></div>
+          <div id="pentool"><img src="pentool.png"></div>
+          <div class="inner-color-box clickable"><img src="me3.png"></div>
+        </div>
+        <div class="text-box">
+          <h1> Hello world! </h1>
+          <p> I'm Adriana - a user experience engineer, graphic designer, and web
+            developer studying Math & Computer Science at the University of
+            California, Berkeley. If you like elephants, enamel pins, shrimp
+            tempura, or string lights, consider me your new best friend. </p>
+          <div class="h-wrap clickable" id="aboutme">
+            <div class="h-box h-text"> <b>about me</b> </div>
+            <div class="h-box h-back"></div>
           </div>
         </div>
+      </div>
 
 
+      <div class="clickable" id="graphic">
+        <div class="pop" id="one"><img src="sushi.png"></div>
+        <div id="graphic-text">design</div>
+        <div id="chop"><img src="chop.png"></div>
+        <div id="g-sub-text"> Icons, doodles, random whimsical ideas - you name it. </div>
+        <div id="sushi-wrap">
+          <img src="dragon.png">
+        </div>
+      </div>
 
-        <div id="top-contatiner">
-          <div id="dots-container">
-              <div id="inner-dots">
-                  <img src="assets/images/dots2.png" class="dots">
-              </div>
+
+    <div class="clickable" id="dev-wrapper">
+      <div id="dev-img"><img src="webdev.png"></div>
+      <div id="code"><img src="code.png"></div>
+      <div id="dev-text">
+        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px">code</h1>
+        <p style="color:white;padding:40px;padding-top:0px;font-size:16px">I coded up this site from scratch - check out
+          some of my other projects too! </p>
+      </div>
+    </div>
+
+    <div class="clickable" id="fine-wrapper">
+      <div id="fine-img-wrap">
+        <div id="fine-img"><img src="arts.png"></div>
+      </div>
+      <div id="pallet"><img src="pallet.png"></div>
+      <div id="fine-text">
+        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px;margin-left:10px">fine art</h1>
+        <p style="color:white;padding:40px;padding-top:0px;font-size:16px;width:180px;margin-top:-20px">As much as I hover over
+        my tablet and keyboard, there's nothing quite like the organic. </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <h1 style="text-align:center;padding-top:60px"> Let's get in touch </h1>
+    <div id="contacts">
+      <div class="contact-wrapper">
+        <a href="https://www.behance.net/adrianababakanian" target="_blank">
+          <div class="contact">
+            <div class="hide"><img style="z-index:100" src="be3flip.png"></div>
+            <div class="flip"><img style="z-index:200" src="be2.png"></div>
+            <div class="circle"></div>
           </div>
-        </div>
+        </a>
+      </div>
+      <div class="contact-wrapper">
+        <a href="https://www.pinterest.com/ababakanian/" target="_blank">
+          <div class="contact">
+            <div class="hide"><img style="z-index:100" src="pin3flip.png"></div>
+            <div class="flip"><img style="z-index:200" src="pin2.png"></div>
+            <div class="circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="contact-wrapper">
+        <a href="https://github.com/adrianababakanian" target="_blank">
+          <div class="contact">
+            <div class="hide"><img style="z-index:100"src="git3flip.png"></div>
+            <div class="flip"><img style="z-index:200" src="git2.png"></div>
+            <div class="circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="contact-wrapper">
+        <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
+          <div class="contact">
+            <div class="hide"><img style="z-index:100" src="in3flip.png"></div>
+            <div class="flip"><img style="z-index:200" src="in2.png"></div>
+            <div class="circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="contact-wrapper">
+        <a href="mailto:ababakanian@berkeley.edu" target="_blank">
+          <div class="contact">
+            <div class="hide"><img style="z-index:100" src="mail3flip.png"></div>
+            <div class="flip"><img style="z-index:200" src="mail2.png"></div>
+            <div class="circle"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- um deleted a random closed div tag here so if something weird happens perhaps
+it could be attributed to this?? -->
 
-        <div id="title-container">
-            <div id="title-box">
-                <div id="title-box-inner">
-                    <img src="assets/images/title4.png" class="image">
-                </div>
-                <div id="logo">
-                    <img src="assets/images/logo.png" class="image">
-                </div>
-                <div id="arrows">
-                    <img src="assets/images/arrows.png" class="image">
-                </div>
-            </div>
-            <div class="line-box" id="one">
-                <div class="line" id="one"></div>
-            </div>
-            <div id="blurb">
-                <img src="assets/images/blurb5.png" class="image">
-            </div>
-            <div class="line-box" id="two">
-                <div class="line" id="two"></div>
-            </div>
-            <div id="face-circle">
-                <div id="face">
-                    <img src="assets/images/face.png" class="small">
-                </div>
-            </div>
-            <!--<div class="line-box" id="three">
-                <div class="hello" id="three"></div>
-            </div>-->
+</body>
 
-        </div>
+<script>
 
-        <div id="more">
-            <img src="assets/images/more.png" class="image">
-        </div>
+  //jQuery variable definition
+  var $width = $('.menu').width();
 
-        <div id="some">
-          <img src="assets/images/some.png" class="image">
-        </div>
+  //on and off toggle of design section
+  $('#graphic, #graphicmenu').click(function() {
+    $('#graphicpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
+  });
+  $('#graphiccloser').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#graphicpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
 
-        <div id="content-container">
-            <div id="intro">
-                <!--<div class="line-box" id="four">
-                    <div class="horizontal" id="four"></div>
-                </div>-->
-                <div id="added"></div>
-                <div id="shifted">
-                    <div id="intro_content">
-                        <img src="assets/images/introtext6.png" class="image">
-                    </div>
-                    <!--<div class="line-box" id="three">
-                        <div class="hi" id="three">
-                    </div>-->
+  //on and off toggle of code section
+  $('#dev-wrapper, #codemenu').click(function() {
+    $('#codepop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
+  });
+  $('#codecloser').click(function() {
+    $('#codecloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#codepop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
 
-                </div>
-            </div>
+  //on and off toggle of art section
+  $('#fine-wrapper, #artmenu').click(function() {
+    $('#artpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
+  });
+  $('#artcloser').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#artpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
 
-            <div id="idea">
-                <div id="idea-content">
-                    <div id="believe">
-                      <img src="assets/images/believe.png" class="image">
-                    </div>
-                    <div id="boxes">
-                        <div id="box">
-                            <img src="assets/images/art.png" class="image">
-                        </div>
-                        <div id="box">
-                            <img src="assets/images/aesthetics.png" class="image">
-                        </div>
-                        <div id="box">
-                            <img src="assets/images/design.png" class="image">
-                        </div>
-                    </div>
-                    <div id="text">
-                        <img src="assets/images/text.png" class="image">
-                    </div>
-                </div>
-            </div>
+  //on and off toggle of about section
+  $('#nav-about, #aboutme, #aboutmenu, .color-box').click(function() {
+    $('#aboutpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#aboutcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
+  });
+  $('#aboutcloser').click(function() {
+    $('#aboutcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#aboutpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
 
-            <div id="portfolio">
-                <div id="portfolio-content">
-                  <img src="assets/images/portfolio2.png" class="image">
-                </div>
+  //on and off toggle of feaster design section
+  $('.feasterwork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#feasterpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.graphicgoback').click(function() {
+    $('#feasterpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    // $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
 
-                <div id="graphic-design">
-                  <div class="button" id="b1"></div>
-                  <div class="button" id="b2"></div>
-                </div>
+  //on and off toggle of berkeley buildings section
+  $('.buildingswork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#buildingspop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.graphicgoback').click(function() {
+    $('#buildingspop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
 
-                <div id="fine-arts">
-                  <div class="button" id="b3"></div>
-                  <div class="button" id="b4"></div>
-                  <div class="button" id="b5"></div>
-                  <div class="button" id="b6"></div>
-                  <div class="button" id="b7"></div>
-                  <div class="button" id="b8"></div>
-                </div>
+  //on and off toggle of graphic design section
+  $('.gdwork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#gdpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.graphicgoback').click(function() {
+    $('#gdpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
 
-                <div id="photography">
-                  <div class="button" id="b9"></div>
-                  <div class="button" id="b10"></div>
-                  <div class="button" id="b11"></div>
-                </div>
+  //on and off toggle of innod section
+  $('.innowork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#innopop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.graphicgoback').click(function() {
+    $('#innopop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
 
-                <div class="artwork" id="a1"></div>
-                <div class="artwork" id="a2"></div>
-                <div class="artwork" id="a3"></div>
-                <div class="artwork" id="a4"></div>
-                <div class="artwork" id="a5"></div>
-                <div class="artwork" id="a6"></div>
-                <div class="artwork" id="a7"></div>
-                <div class="artwork" id="a8"></div>
-                <div class="artwork" id="a9"></div>
-                <div class="artwork" id="a10"></div>
-                <div class="artwork" id="a11"></div>
-            </div>
+  //on and off toggle of weatherornot section
+  $('.weatherwork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#weatherpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.graphicgoback').click(function() {
+    $('#weatherpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
 
-            <div id="resume">
-                <div id="age">
-                    <img src="assets/images/age.png" class="image">
-                </div>
-                <div id="education">
-                    <img src="assets/images/education2.png" class="image">
-                </div>
-                <div id="skills">
-                  <div id="technicaltitle">
-                      <img src="assets/images/technicaltitle.png" class="image">
-                  </div>
-                  <div id="technical">
-                      <div class="skill">
-                          <img src="assets/images/html.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/css.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/js.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/psd.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/ai.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/id.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/ppt.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/doc.png" class="image">
-                      </div>
-                      <div class="skill">
-                          <img src="assets/images/xls.png" class="image">
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
+  //on and off toggle of personal branding section
+  $('.personalwork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#personalpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.graphicgoback').click(function() {
+    $('#personalpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
 
-    </body>
-</html>
+  //on and off toggle of weatherornot code section
+  $('.weathercodework').click(function() {
+    $('#codecloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#weathercodepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.codegoback').click(function() {
+    $('#weathercodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of feaster code section
+  $('.feastercodework').click(function() {
+    $('#codecloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#feastercodepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.codegoback').click(function() {
+    $('#feastercodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of personal site code section
+  $('.personalcodework').click(function() {
+    $('#codecloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#personalcodepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.codegoback').click(function() {
+    $('#personalcodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+</script>
