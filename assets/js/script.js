@@ -3,6 +3,7 @@ $(document).ready(function() {
   //jQuery variable definition
   var $width = $('.menu').width();
 
+
   //on and off toggle of design section
   $('#graphic, #graphicmenu').click(function() {
     $('#graphicpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
@@ -165,6 +166,54 @@ $(document).ready(function() {
     $('#personalcodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of alice in wonderland section
+  $('.alicework').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#alicepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#alicepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of interconnected section
+  $('.interconnectedwork').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#interconnectedpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#interconnectedpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of wooden section
+  $('.woodenwork').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#woodenpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#woodenpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of robots section
+  $('.robotswork').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#robotspop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#robotspop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
   });
 
 
