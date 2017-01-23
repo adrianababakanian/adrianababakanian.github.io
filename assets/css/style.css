@@ -1,4 +1,7 @@
-/* Classes used throughout the page */
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
        cursor: pointer;
 }
@@ -396,6 +399,7 @@ a:active {
 .wrapper {
   width: 100vw;
   margin-left: 0px;
+  overflow: hidden;
 }
 
 .work-cover {
@@ -568,42 +572,80 @@ img {
 }
 
 #laptop {
-  height: 30px;
+  height: 25px;
   width: auto;
   position: absolute;
   margin-left: 200px;
-  margin-top: 10px;
+  margin-top: 80px;
   z-index: 1;
   transform: rotate(10deg);
 }
 
 #tea {
-  height: 35px;
+  height: 25px;
   width: auto;
   position: absolute;
   z-index: 1;
   transform: rotate(-20deg);
   margin-top: 200px;
+  margin-left: 50px;
 }
 
 #pentool {
-  height: 35px;
+  height: 25px;
   width: auto;
   position: absolute;
   z-index: 1;
   margin-left: 80px;
+  margin-top: 40px;
 }
 
 @keyframes penbloop {
   0%   {left: 0px;}
   0%   {top: 0px;}
-  50%   {left: -100px;}
-  50%   {top: 200px;}
+  45%   {left: -10px;}
+  45%   {top: -80px;}
+  55%   {left: -10px;}
+  55%   {top: -80px;}
   100% {left: 0px;}
   100% {top: 0px;}
+  100% {transform: rotate(360deg);}
 }
 
-.color-box:hover ~ #pentool {
+@keyframes teabloop {
+  0%   {left: 0px;}
+  0%   {top: 0px;}
+  45%   {left: -60px;}
+  45%   {top: -40px;}
+  55%   {left: -60px;}
+  55%   {top: -40px;}
+  100% {left: 0px;}
+  100% {top: 0px;}
+  100% {transform: rotate(-360deg);}
+}
+
+@keyframes laptopbloop {
+  0%   {left: 0px;}
+  0%   {top: 0px;}
+  45%   {left: 10px;}
+  45%   {top: -90px;}
+  55%   {left: 10px;}
+  55%   {top: -90px;}
+  100% {left: 0px;}
+  100% {top: 0px;}
+  100% {transform: rotate(360deg);}
+}
+
+.color-box:hover #laptop {
+  animation: laptopbloop 2s;
+}
+
+.color-box:hover #pentool {
+  animation: penbloop 2s;
+}
+
+.color-box:hover #tea {
+  animation: teabloop 2s;
 }
 
 .text-box {
@@ -1059,6 +1101,8 @@ h1 {
   height: 400px;
   background-color: #DCEBF7;
   margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
 }
 
 #contacts {
@@ -1156,15 +1200,16 @@ h1 {
 
 .contact-wrapabout {
   width: 100%;
-  height: 40px;
+  height: 20px;
+  margin-top: 50px;
 }
 
 .menu-contact-wrapperabout {
-  width: 8%;
-  padding-top: 8%;
+  width: 5%;
+  padding-top: 5%;
   float: left;
   position: relative;
-  margin-right: 15%;
+  margin-right: 18%;
 }
 
 #lastabout {
@@ -1436,6 +1481,27 @@ h1 {
   min-width: 320px;
 }
 
+.workcontent a:link{
+  color: #ABC6D8;
+  text-decoration: none;
+}
+
+.workcontent a:visited{
+  color: #ABC6D8;
+  text-decoration: none;
+}
+
+.workcontent a:hover{
+  color: #ABC6D8;
+  opacity: .5;
+  text-decoration: none;
+}
+
+.workcontent a:active{
+  color: #ABC6D8;
+  text-decoration: none;
+}
+
 .intro {
   margin-top: 100px;
 }
@@ -1443,6 +1509,8 @@ h1 {
 .caption {
   color: #939393;
   margin-left: 10vw;
+  width: 80vw;
+  min-width: 320px;
 }
 
 .goback {
@@ -1495,18 +1563,56 @@ h1 {
   min-width: 320px;
 }
 
+.randimage-wrapper {
+  width: 100%;
+  height: 35vw;
+  margin-left: 0px;
+  min-width: 320px;
+}
+
+.longimage-wrapper {
+  width: 100%;
+  height: 20vw;
+  margin-left: 0px;
+  min-width: 320px;
+}
+
 .introimage {
   width: 80vw;
   height: 35vw;
   margin-top: 20px;
   margin-left: 10vw;
   position: relative;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // box-shadow: 0px 0px 8px #BEBEC6;
   outline-style: solid;
   outline-color: #DCEBF7;
   outline-width: 1px;
+  overflow: hidden;
+}
+
+.gray {
+  background-color: #525352;
+}
+
+.randimage {
+  width: 80vw;
+  height: 35vw;
+  margin-top: 20px;
+  margin-left: 10vw;
+  position: relative;
+}
+
+.longimage {
+  width: 80vw;
+  height: 20vw;
+  margin-top: 20px;
+  margin-left: 10vw;
+  position: relative;
+}
+
+.noborder {
+  outline-style: none;
+  outline-color: none;
+  outline-width: 0px;
 }
 
 .about-wrapper {
@@ -1515,6 +1621,10 @@ h1 {
   margin-left: 10vw;
   margin-top: 5vw;
   min-width: 320px;
+}
+
+#aboutpop {
+  overflow: hidden;
 }
 
 .about-wrapper a:link {
@@ -1549,6 +1659,15 @@ h1 {
   min-width: 320px;
 }
 
+.inneraboutphoto {
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
 .aboutcontent {
   margin-left: 5vw;
   width: 40vw;
@@ -1567,13 +1686,13 @@ h1 {
   font-family: PT Serif;
   font-size: 18px;
   font-style: italic;
-  // margin-top: 50px;
 }
 
-ul {
-  padding-left: 0px;
-}
+// ul {
+//   padding-left: 0px;
+// }
 
 .tech {
-  color: #DCEBF7;
+  // color: #DCEBF7;
+  color: #ABC6D8;
 }
