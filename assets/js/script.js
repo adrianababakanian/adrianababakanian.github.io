@@ -1,7 +1,105 @@
 $(document).ready(function() {
 
   //jQuery variable definition
+  var $logo = $('.nav-logo');
+  var $nav = $('.nav');
+  var $navc = $('.nav-copy');
+  var $under = $('.under');
+  var $line = $('.under-line');
+  var isHovered = $('#graphic').is(":hover");
   var $width = $('.menu').width();
+
+  //animating the navigation bar when scrolling off the top of the document
+  $(document).scroll(function() {
+    $logo.animate({height: $(this).scrollTop() > 0? "40px":"60px"}, {duration: 100, queue: false, easing: "linear"});
+    $nav.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $navc.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $under.animate({lineHeight: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $under.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"}, {duration: 0, queue: false, easing: "linear"});
+    $line.animate({marginTop: $(this).scrollTop() > 0? "-22px":"-42px"}, {duration: 0, queue: false, easing: "linear"});
+  });
+
+  //floating containers upwards and inwards on scroll
+  $(function(){
+    $(document).scroll(function(){
+        var $scroll = $(this).scrollTop();
+        var $goff = $('#graphic').offset();
+        var $graphic = $('#graphic');
+        if($scroll >= $goff.top - 400) {
+            $graphic.css("marginLeft","720px");
+            $graphic.css("marginTop", "-40px");
+        } else {
+            $graphic.css("marginLeft","750px");
+            $graphic.css("marginTop", "-10px");
+        }
+    });
+  });
+
+
+  $(function(){
+    $(document).scroll(function(){
+        var $scroll = $(this).scrollTop();
+        var $doff = $('#dev-wrapper').offset();
+        var $dev = $('#dev-wrapper');
+        if($scroll >= $doff.top - 500) {
+            $dev.css("marginLeft","80px");
+            $dev.css("marginTop", "-170px");
+        } else {
+            $dev.css("marginLeft","60px");
+            $dev.css("marginTop", "-130px");
+        }
+    });
+  });
+
+  $(function(){
+    $(document).scroll(function(){
+        var $scroll = $(this).scrollTop();
+        var $foff = $('#fine-wrapper').offset();
+        var $fine = $('#fine-wrapper');
+        if($scroll >= 1500) {
+            $dev.css("marginLeft","520px");
+            $dev.css("marginTop", "-230px");
+        } else {
+            $dev.css("marginLeft","550px");
+            $dev.css("marginTop", "-200px");
+        }
+    });
+  });
+
+  //making fixed disappear after certain scroll
+  $(document).scroll(function() {
+    var $fix = $('.fix');
+    $fix.animate({opacity: $(this).scrollTop() > 1000? "0":"1"}, {duration: 50, queue: false, easing: "linear"});
+  });
+
+  //menu on toggle
+  $('#nav-menu').click(function() {
+    $('.menu').animate({marginLeft: "0vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "80%"}, {duration: 600, queue: false, easing: "linear"});
+    $('.hider').addClass('showhider');
+    $('.hider').animate({marginLeft: "0vw"}, {duration: 00, queue: false, easing: "linear"});
+    $('.hider').animate({opacity: ".4"}, {duration: 500, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "30vw"}, {duration: 400, queue: false, easing: "linear"});
+  });
+  //menu off toggle
+  $(document).mouseup(function (e)
+    {
+    var container = $(".menu");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
+        $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
+        $('.hider').removeClass('showhider');
+        $('.hider').animate({marginLeft: "-100vw"}, {duration: 00, queue: false, easing: "linear"});
+        $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    }
+  });
+
+  //setting margin-left of menu based on width of menu div
+   $('.menu').css('margin-left',-$width);
 
 
   //on and off toggle of design section
@@ -215,6 +313,5 @@ $(document).ready(function() {
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
   });
-
 
 });
