@@ -892,7 +892,7 @@ h1 {
   height: 400px;
   margin-left: 550px;
   margin-top: -200px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   position: relative;
   transition: .3s;
 }
@@ -1505,6 +1505,19 @@ h1 {
   text-decoration: none;
 }
 
+.contact-wrapabout a:link {
+  opacity: 1;
+}
+.contact-wrapabout a:visited {
+  opacity: 1;
+}
+.contact-wrapabout a:hover  {
+  opacity: 1;
+}
+.contact-wrapabout a:active {
+  opacity: 1;
+}
+
 .intro {
   margin-top: 100px;
 }
@@ -1647,6 +1660,10 @@ h1 {
   overflow: hidden;
 }
 
+.blue {
+  background-color: #1093C0;
+}
+
 .about-wrapper a:link {
   color: #f85563;
   text-decoration: none;
@@ -1657,7 +1674,7 @@ h1 {
   text-decoration: none;
 }
 
-.about-wrapper a:hover {
+.about-wrapper p a:hover {
   color: #f85563;
   text-decoration: none;
   opacity: .7;
