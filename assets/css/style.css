@@ -1694,6 +1694,7 @@ h1 {
   height: 45vw;
   background-color: #f85563;
   min-width: 320px;
+  transition: .5s;
 }
 
 .inneraboutphoto {
@@ -1703,6 +1704,16 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   position: relative;
+}
+
+@keyframes bloop2 {
+  0%   {width: 80%; height: 80%;}
+  50%   {width: 80.5%; height: 80.5%;}
+  100% {width: 80%; height: 80%;}
+}
+
+.inneraboutphoto:hover {
+  animation: bloop2 .5s;
 }
 
 .aboutcontent {
