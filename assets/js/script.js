@@ -36,7 +36,9 @@ $(document).ready(function() {
     });
   });
 
+  // animating divide in about section on appearance (setting to full width of 100px)
 
+  // offsetting code intro wrapper on scroll
   $(function(){
     $(document).scroll(function(){
         var $scroll = $(this).scrollTop();
@@ -52,6 +54,7 @@ $(document).ready(function() {
     });
   });
 
+  // offsetting fine art intro wrapper on scroll
   $(function(){
     $(document).scroll(function(){
         var $scroll = $(this).scrollTop();
@@ -100,7 +103,6 @@ $(document).ready(function() {
 
   //setting margin-left of menu based on width of menu div
    $('.menu').css('margin-left',-$width);
-
 
   //on and off toggle of design section
   $('#graphic, #graphicmenu').click(function() {
@@ -151,11 +153,13 @@ $(document).ready(function() {
     $('#aboutcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
     $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
     $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
+    $('.divide').animate({width: "100px"}, {duration: 700, queue: false, easing: "linear"});
   });
   $('#aboutcloser').click(function() {
     $('#aboutcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
     $('#aboutpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.divide').animate({width: "0px"}, {duration: 700, queue: false, easing: "linear"});
   });
 
   //on and off toggle of feaster design section
