@@ -1,9 +1,20 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <title> Adriana Babakanian </title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script language="JavaScript" type="text/javascript" src="assets/js/script.js"></script>
-  <link rek="icon" href="assets/images/logo2.png">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Adriana Babakanian</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="partials/images/logo2.png">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- Google Font Scripts -->
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" type="text/css"
@@ -12,687 +23,118 @@
       href="https://fonts.googleapis.com/css?family=Puritan">
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=PT-Serif">
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Nunito">
+  <!-- JQuery -->
+  <script src="jquery-3.2.1.min.js"></script>
+  <!-- AngularJS ngAnimate Google CDN -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+  <script src="js/app.js"></script>
+
 </head>
 <body>
 
-  <div class="menu">
-    <div class="menu-logo"><img src="assets/images/logo2.png"></div>
-    <div class="section-wrap">
-      <div class="section clickable" id="graphicmenu"><p> Design </p> <div class="liner"></div></div><br/>
-      <div class="section clickable" id="codemenu"><p> Code </p> <div class="liner"></div> </div><br/>
-      <div class="section clickable" id="artmenu"><p> Fine Art </p> <div class="liner"></div> </div><br/>
-      <div class="section clickable" id="aboutmenu"><p> About </p> <div class="liner"></div> </div><br/>
-    </div>
-    <div class="divider"></div>
-    <div class="contact-wrap">
-        <div class="menu-contact-wrapper">
-          <a href="https://www.behance.net/adrianababakanian" target="_blank">
-            <div class="menu-contact">
-              <div class="menu-hide"><img style="z-index:100" src="assets/images/be3flip.png"></div>
-              <div class="menu-flip"><img style="z-index:200" src="assets/images/be2.png"></div>
-              <div class="menu-circle"></div>
-            </div>
-          </a>
-        </div>
-        <div class="menu-contact-wrapper">
-          <a href="https://www.pinterest.com/ababakanian/" target="_blank">
-            <div class="menu-contact">
-              <div class="menu-hide"><img style="z-index:100" src="assets/images/pin3flip.png"></div>
-              <div class="menu-flip"><img style="z-index:200" src="assets/images/pin2.png"></div>
-              <div class="menu-circle"></div>
-            </div>
-          </a>
-        </div>
-        <div class="menu-contact-wrapper">
-          <a href="https://github.com/adrianababakanian" target="_blank">
-            <div class="menu-contact">
-              <div class="menu-hide"><img style="z-index:100" src="assets/images/git3flip.png"></div>
-              <div class="menu-flip"><img style="z-index:200" src="assets/images/git2.png"></div>
-              <div class="menu-circle"></div>
-            </div>
-          </a>
-        </div>
-        <div class="menu-contact-wrapper">
-          <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
-            <div class="menu-contact">
-              <div class="menu-hide"><img style="z-index:100" src="assets/images/in3flip.png"></div>
-              <div class="menu-flip"><img style="z-index:200" src="assets/images/in2.png"></div>
-              <div class="menu-circle"></div>
-            </div>
-          </a>
-        </div>
-        <div class="menu-contact-wrapper" id="last">
-          <a href="mailto:ababakanian@berkeley.edu" target="_blank">
-            <div class="menu-contact">
-              <div class="menu-hide"><img style="z-index:100" src="assets/images/mail3flip.png"></div>
-              <div class="menu-flip"><img style="z-index:200" src="assets/images/mail2.png"></div>
-              <div class="menu-circle"></div>
-            </div>
-          </a>
+
+  <div class="dropdown">
+    <div class="dropbtn">
+        <div class="bar-cont">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </div>
-  </div>
-  <div class="hider"></div>
-
-  <div class="closer clickable" id="graphiccloser"><img src="assets/images/xwhite.png" class="x xwhite"></div>
-  <div class="closer clickable" id="codecloser"><img src="assets/images/xwhite.png" class="x xwhite"></div>
-  <div class="closer clickable" id="artcloser"><img src="assets/images/xwhite.png" class="x xwhite"></div>
-  <div class="closer clickable" id="aboutcloser"><img src="assets/images/xwhite.png" class="x xwhite"></div>
-
-  <div class="sectionpop" id="graphicpop">
-    <div class="sectionwrap">
-      <div class="workstitle">
-        <h1> Design </h1>
-        <p> Click to explore my projects, sketches, and doodles. </p>
-      </div>
-      <div class="workswrap">
-        <div class="work feasterwork">
-          <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
-          <img src="assets/images/feaster4.png">
-        </div>
-        <div class="work buildingswork" id="map">
-          <div class="workcover">Map of Berkeley | Graphic Design</div>
-          <img src="assets/images/newdoe.png" class="hor">
-        </div>
-        <div class="work innowork">
-          <div class="workcover">Innovative Design | Marketing Design</div>
-          <img src="assets/images/flyer.png">
-        </div>
-        <div class="work gdwork" id="last">
-          <div class="workcover">Graphic Design & Illustration</div>
-          <img src="assets/images/gd2-min.png">
-        </div>
-        <div class="work personalwork">
-          <div class="workcover">Laud'em | UI/UX & Branding Design</div>
-          <img src="assets/images/laud4-min.png">
-        </div>
-      </div>
+    <div class="dropdown-content">
+      <a href="design/design.html">Design</a>
+      <a href="code/code.html">Code</a>
+      <a href="prototyping/prototyping.html">Prototyping</a>
+      <a href="about/about.html">About</a>
     </div>
   </div>
 
-  <div class="sectionpop" id="codepop">
-    <div class="workstitle">
-      <h1> Code </h1>
-      <p> Click to explore some of my sites and webapps. </p>
-    </div>
-    <div class="workswrap">
-      <div class="work feastercodework">
-        <div class="workcover">Feaster Landing Page</div>
-        <img src="assets/images/feastermockup.png">
-      </div>
-      <div class="work personalcodework" id="last">
-        <div class="workcover">Personal Site Iteration</div>
-        <img src="assets/images/mysite.png" class="hor">
-      </div>
-      <div class="work weathercodework">
-        <div class="workcover">WeatherOrNot</div>
-        <img src="assets/images/weathermockup2.png">
-      </div>
-    </div>
-  </div>
 
-  <div class="sectionpop" id="artpop">
-    <div class="workstitle">
-      <h1> Fine Art </h1>
-      <p> Click to explore some of my paintings, mixed media compositions, and other fine art works. </p>
-    </div>
-    <div class="workswrap">
-      <div class="work alicework">
-        <div class="workcover">Alice In Wonderland</div>
-        <img src="assets/images/arts.png" class="hor">
-      </div>
-      <div class="work interconnectedwork" id="last">
-        <div class="workcover">Interconnected</div>
-        <img src="assets/images/interconnected-min.png" class="hor">
-      </div>
-      <div class="work woodenwork">
-        <div class="workcover">Wooden</div>
-        <img src="assets/images/wood.png" class="hor">
-      </div>
-      <div class="work robotswork" id="last">
-        <div class="workcover">Robots</div>
-        <img src="assets/images/robot.png" class="hor">
-      </div>
-    </div>
-  </div>
 
-  <div class="sectionpop" id="aboutpop">
-    <div class="about-wrapper">
-      <div class="aboutdiv aboutphoto"><div class="inneraboutphoto"><img src="assets/images/upside-min.png"></div></div>
-      <div class="aboutdiv aboutcontent">
-        <div class="cursive"> <b>Hi there!</b> </div>
-        <h1 style="margin-top: 20px"> Adriana Babakanian </h1>
-        <div class="divide"></div>
-        <h3> I'm a second year Regents' Scholar at UC Berkeley pursuing
-          a double major in Applied Mathematics & Computer Science. I have a keen passion for creating, especially when it comes to human-centered products
-          that lie at the intersection of design and technology.
-        </h3>
-        <p style="margin-top:40px"> I love doodling on my drawing tablet, developing websites,
-          roaming around San Francisco with a pack of instant film,
-          eating carne asada fries, reading random nerdy math books, and going on beachside hikes with my dog Holly. </p>
-        <p>
-          Director & Lead Designer at <a href="https://calhacks.io/" target="_blank">Cal Hacks</a> </br>
-          Branding, Marketing, & UI/UX Designer at <a href="https://www.feasterworks.com" target="_blank">Feaster</a> </br>
-          <a href="http://innovativedesign.club/" target="_blank"> Innovative Design</a>, Marketing & Gold Tier
-        </p>
-        <p> <b>Web Development &nbsp &nbsp &nbsp </b> Ruby on Rails | HTML | CSS | JavaScript </br>
-        <b>Programming &nbsp &nbsp &nbsp </b> Java | Python | Ruby | C (in progress)</br>
-        <b>Graphic Design &nbsp &nbsp &nbsp </b> Illustrator | Sketch | Photoshop | InDesign  </p>
-        <div class="contact-wrapabout">
-            <div class="menu-contact-wrapperabout">
-              <a href="https://www.behance.net/adrianababakanian" target="_blank">
-                <div class="menu-contactabout">
-                  <div class="menu-hideabout"><img style="z-index:100" src="assets/images/be3flip.png"></div>
-                  <div class="menu-flipabout"><img style="z-index:200" src="assets/images/be2.png"></div>
-                  <div class="menu-circleabout"></div>
-                </div>
-              </a>
-            </div>
-            <div class="menu-contact-wrapperabout">
-              <a href="https://www.pinterest.com/ababakanian/" target="_blank">
-                <div class="menu-contactabout">
-                  <div class="menu-hideabout"><img style="z-index:100" src="assets/images/pin3flip.png"></div>
-                  <div class="menu-flipabout"><img style="z-index:200" src="assets/images/pin2.png"></div>
-                  <div class="menu-circleabout"></div>
-                </div>
-              </a>
-            </div>
-            <div class="menu-contact-wrapperabout">
-              <a href="https://github.com/adrianababakanian" target="_blank">
-                <div class="menu-contactabout">
-                  <div class="menu-hideabout"><img style="z-index:100"src="assets/images/git3flip.png"></div>
-                  <div class="menu-flipabout"><img style="z-index:200" src="assets/images/git2.png"></div>
-                  <div class="menu-circleabout"></div>
-                </div>
-              </a>
-            </div>
-            <div class="menu-contact-wrapperabout">
-              <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
-                <div class="menu-contactabout">
-                  <div class="menu-hideabout"><img style="z-index:100" src="assets/images/in3flip.png"></div>
-                  <div class="menu-flipabout"><img style="z-index:200" src="assets/images/in2.png"></div>
-                  <div class="menu-circleabout"></div>
-                </div>
-              </a>
-            </div>
-            <div class="menu-contact-wrapperabout" id="last">
-              <a href="mailto:ababakanian@berkeley.edu" target="_blank">
-                <div class="menu-contactabout">
-                  <div class="menu-hideabout"><img style="z-index:100" src="assets/images/mail3flip.png"></div>
-                  <div class="menu-flipabout"><img style="z-index:200" src="assets/images/mail2.png"></div>
-                  <div class="menu-circleabout"></div>
-                </div>
-              </a>
+<div class="wrap">
+
+<div class="gradient" style="background-image:url('gradient.png')">
+    <div class="logo-wrapper">
+        <div class="logo">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 0 319.19 330.36"><defs><style>.cls-1{fill:#303030;}</style></defs><title>personal site</title><path class="cls-1" d="M250.08,124.08c3.58.48,7.08.8,10.52,1.44,15.63,2.88,29.29,9.65,40.53,21a60.49,60.49,0,0,1,17.59,37c1.44,13.19-.55,26-4.47,38.53A116.06,116.06,0,0,1,233.4,299.5c-11.84,3.09-23.54,2.58-34.76-2.74-7.55-3.58-13.85-8.66-17.71-16.23a63.26,63.26,0,0,1-5.4-16c-3.25-15.72-6.35-31.47-9.43-47.22-2.88-14.69-5.66-29.4-8.49-44.11-.24-1.25-.5-2.49-.79-3.92-1.95.87-3.8,1.67-5.63,2.52q-20.08,9.22-40.17,18.43a1.74,1.74,0,0,0-1.19,1.75c-.68,13.73-1.32,27.46-2.18,41.18a217,217,0,0,1-5.2,37.34A120.62,120.62,0,0,1,87,307.9,52.77,52.77,0,0,1,72,323.82c-8.78,5.83-18.46,7.57-28.76,6a48.72,48.72,0,0,1-27.1-13,50.32,50.32,0,0,1-13.4-23,75.45,75.45,0,0,1-2-30.64,109.58,109.58,0,0,1,10.2-34.53c7.07-14.43,17.49-26,30.41-35.38a228.08,228.08,0,0,1,31.06-18.74c5.62-2.86,11.3-5.6,17-8.37a1.4,1.4,0,0,0,.93-1.43c.23-9.11.37-18.22.81-27.32.57-11.65,1.35-23.3,2.1-34.94,1-16,1.63-24,1.91-26.78,1.33-13,4-32.52,12.41-48a25.43,25.43,0,0,1,9.1-10.18A24.91,24.91,0,0,1,130.15,14a16.79,16.79,0,0,1,5.66,1s5,1.92,9.65,8.3c.81,1.11.9,1.24.9,1.24.3.47.69.88,1,1.37.08.13.24.42.41.4s.17-.12.22-.2c.18-.28.45-.49.63-.77a63.75,63.75,0,0,1,4.67-5.25,58.71,58.71,0,0,1,6.29-5.44A74.71,74.71,0,0,1,191.46,1.17,61.34,61.34,0,0,1,221,2.53c13.08,4,23.21,12.08,31,23.14a80.63,80.63,0,0,1,13.68,34.68,85.48,85.48,0,0,1-3.38,41.27,76.41,76.41,0,0,1-11.48,21.46Zm-61.82,33.15c0,.42.06.73.13,1,2.91,14.11,5.89,28.21,8.72,42.34,1.78,8.93,3.33,17.9,5,26.85,1.51,8.24,3,16.5,4.54,24.73a24,24,0,0,0,3.95,9.94,12.34,12.34,0,0,0,9.94,5.53,31,31,0,0,0,13.59-2.86A88.63,88.63,0,0,0,266.34,242c9.84-11.08,17-23.58,18.69-38.63,1-8.46.61-16.85-2.07-25-2.07-6.33-5.22-12.1-10.45-16.35-11.87-9.63-25.78-13.15-40.79-13.07a130.67,130.67,0,0,0-21.77,2.36A153.8,153.8,0,0,0,188.26,157.23ZM157.81,38c.17.27.45.72.77,1.27a37.48,37.48,0,0,1,3.22,7.28C166.45,60.7,167,62.92,167,62.92c8.7,36.12,14.66,63.79,14.66,63.79.87,4,1.57,7.28,2,9.21l1.33-.55c4.41-1.86,8.81-3.77,13.25-5.56a24.33,24.33,0,0,0,5.87-3.41c6.77-5.26,13.42-10.65,18.48-17.68,11.8-16.4,15.82-34.35,10.22-54a39.55,39.55,0,0,0-15.65-22.06c-8.49-5.94-18.08-6.76-28-5.53a67.36,67.36,0,0,0-22.22,5.71A62.94,62.94,0,0,0,157.81,38Zm-69,163.38c-.46.2-.72.29-1,.42-5.63,3.11-11.33,6.09-16.86,9.37A95.14,95.14,0,0,0,49.44,228C35,243.58,29.83,262.17,31.68,283c.57,6.38,4,11,10.1,13.22,8.58,3.08,16.11,1,22.61-5.16,5.19-4.94,8.61-11.07,11.49-17.53,6.23-14,8.87-28.79,10.53-43.84.65-5.92,1.11-11.85,1.62-17.79C88.33,208.44,88.55,205,88.81,201.39Zm23.48-45.26a2.56,2.56,0,0,0,.3,0,372.66,372.66,0,0,0,38.91-11.93c.92-.34.83-.84.7-1.55-1.81-10.18-3.63-20.36-5.4-30.55-2.07-11.92-4.09-23.85-6.14-35.78a258.79,258.79,0,0,0-5.25-25.69,61.1,61.1,0,0,0-5.67-14.07c-1-1.72-1.3-1.76-3-.79a13.84,13.84,0,0,0-5.58,6.85,60.11,60.11,0,0,0-3.62,13.5,197.22,197.22,0,0,0-2.73,26.09c-.57,12.65-1.23,25.31-1.76,38-.34,8.22-.56,16.46-.77,24.69C112.22,148.57,112.3,152.32,112.3,156.13Z"/></svg>
+        </div>
+    </div>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="circle-wrap">
+                <div class="circle lavender"></div>
+                <div class="circle magenta"></div>
+                <div class="circle pink"></div>
             </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- detail section about a specific project or work -->
-  <div class="workpop" id="feasterpop">
-    <div class="goback clickable graphicgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-    <div class="workcontent intro">
-      <h1> Feaster </h1>
-      <p> Over the past 8 months, I have been working with <a href="https://www.feasterworks.com/" target="_blank">Feaster</a>, a digital marketing platform
-        that provides users with custom deals and offers on local food and drink via <a href="https://www.getfeaster.com/" target="_blank">Facebook Messenger</a>. Through Feaster I have
-        had the opportunity to fully create and execute a visual identity, marketing materials,
-        a landing page, and more for a startup that I am very excited and honored to be an integral component of.
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/feaster8.png"></div></div>
-
-
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: Adobe Illustrator, Sketch </h2>
-      <p> <em> <b> Please note that all materials here are copyright and property of Feaster, Inc.
-      Please visit our landing page for more information. </b> </em> </p>
-      <h2 class="tech"> Logo Iterations </h2>
-      <p> My first task as a member of the Feaster team was to develop a logo and logo text to fuel all of our
-        branding identity. My goal was to communicate to the user the key features that Feaster delivers &mdash; that is,
-        an optimal way to receive personalized deals on local food and drink while saving money. </p>
-      <p> I started off by brainstorming with some rather cliche illustrations iconic of eating and savings, as well as lettering
-        many iterations of the word "Feaster." </p>
-    </div>
-      <div class="introimage-wrapper"><div class="introimage gray"><img src="assets/images/brainstorm-min.png" class="hor"></div></div>
-      <div class="caption"> <p><em> A sample of the brainstorming process behind the Feaster logo and logo text. </em> </p></div>
-      <div class="workcontent">
-        <p> After some more brainstorming, I came up with the idea of a piggy bank. Pigs are iconic of eating,
-          and piggy banks are iconic of saving. I decided to add a fork and spoon on the surface of the piggy bank
-          to empahsize the use of this bank as a place for storing the savings a user would garner
-          by using Feaster. </p>
-        <p> The piggy bank also went through an iterative process. I started off by forming the structure of the pig out of
-          overlapping circles, and then moved on to refine the overall shape and details of the shading.</p>
-      </div>
-      <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/circlepig2.png"></div></div>
-      <div class="caption"> <p> <em> A behind-the-scenes look at how I created the structure of the piggy bank in
-      Feaster's logo. </em> </p></div>
-      <div class="workcontent">
-        <p> Since this was the first time that I had the repsonsbility of creating such a unique logo that was to be used extensively for the branding of
-          a company, I completely underestimated the amount of itertaing I would embark upon after the basic structure of the logo was implemented. Even though
-          I have always been a chronic perfectionist, I even began to get on my own nerves as I hyperfocused on every detail of the logo. But the amount of time I
-          spent making sure every stroke was perfect was more than worth it. It was extremely rewarding to watch something progress from a rudimentary to a much more
-          refined state, and I now feel much more knowledgable about what it takes to implement something as crucial as a brand's logo. </p>
-      </div>
-      <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/pigprogression2.png" class="hor"></div></div>
-      <div class="caption"> <p> <em> A rough timeline of the logo's progression. </em> </p></div>
-      <div class="introimage-wrapper"><div class="introimage gray"><img src="assets/images/logoprogression-min.png" class="hor"></div></div>
-      <div class="caption"> <p> <em> Some of the iterations of the logo text. </em> </p></div>
-      <div class="workcontent">
-        <p> After many, many, many iterations, I am very proud to present the final products! </p>
-      </div>
-      <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/marketing.png"></div></div>
-      <div class="caption"> <p> <em> The final version of Feaster's logo. </em> </p></div>
-      <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/fl-min.png" class="hor"></div></div>
-      <div class="caption"> <p> <em> The final version of Feaster's logo text. </em> </p></div>
-      <div class="workcontent">
-        <h2 class="tech"> Site Layout </h2>
-        <p> Please explore the Feaster Landing Page's information on the code part of this site for more information about
-          how the landing page was made! </p>
-        <h2 class="tech"> Marketing Materials </h2>
-        <p> Once a business signs up with Feaster, it is then of course crucial that the business owners have the proper materials
-          to market their offers on Feaster to their customers. Currently, one of my main roles at Feaster is creating these marketing
-          materials that businesses either dispaly in their restaurants or hand out to their customers. </p>
-      </div>
-
-
-
-      <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/fm2-min.png"></div></div>
-      <div class="caption bottom"> <p><em> A sticker that restaurants put on their windows to show that they offer deals on Feaster, as well as a
-        flyer that provides a link to sign up for a specific business's offers. </em> </p></div>
-    </div>
-
-  <div class="workpop" id="buildingspop">
-    <div class="goback clickable graphicgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-    <div class="workcontent intro">
-      <h1> Map of Berkeley </h1>
-      <p> I love the architecture of my school. It somehow manages to be simultanously ecelectic and cohesive, and never fails to inspire me
-        regardless of how many times I sleepwalk through campus on my way to lecture or leave a building after a not-so-fun midterm. Because of it's beauty
-        I decided to make an illustrated map of <a href="http://www.berkeley.edu/" target="_blank">UC Berkeley</a>. Below are some of the buildings I have completed so far &mdash; check back soon to see more illustrations of
-        our beautiful architecture and the final
-        version of the map! </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage map"><img src="assets/images/map2new.png"></div></div>
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: Adobe Illustrator </h2>
-      <p> The architecture included here so far, in my opinion, captures the some of the most "Berkeley-esque" features
-        of campus. Muted mint greens, coppery corals, grayish off-whites, and relaxed navy blues are the most prominent colors
-        that come to mind when I think of our campus. </p>
-      <h2 class="tech"> Doe Library </h2>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage map"><img src="assets/images/doenew.png"></div></div>
-    <div class="caption"> <p><em> One of my favorite places to study is North Reading Room, located on the second story of Doe Library. </em> </p></div>
-    <div class="workcontent"><h2 class="tech"> South Hall </h2></div>
-    <div class="introimage-wrapper"><div class="introimage map"><img src="assets/images/southnew.png"></div></div>
-    <div class="caption"> <p><em> South Hall is the oldest building on campus, and the only remaining building
-    from the original campus. </em> </p></div>
-    <div class="workcontent"><h2 class="tech"> Soda Hall & Evans Hall </h2></div>
-    <div class="introimage-wrapper"><div class="introimage map"><img src="assets/images/sodaevansnew.png"></div></div>
-    <div class="caption"> <p><em> Evans and Soda are the Math and Computer Science buildings, respectively -- in other words,
-    my second home(s). </em> </p></div>
-    <div class="workcontent"><h2 class="tech"> Sather Gate </h2></div>
-    <div class="introimage-wrapper"><div class="introimage map"><img src="assets/images/sather-min.png"></div></div>
-    <div class="caption bottom"> <p><em> Sather Gate is always beautiful, but it looks especially lovely when it is lit up at night in the rain. </em> </p></div>
-  </div>
-
-  <div class="workpop" id="gdpop">
-    <div class="gdpop-wrapper">
-      <div class="goback clickable graphicgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-      <div class="workcontent intro">
-        <h1> Graphic Design </h1>
-        <p> When random inspiration strikes, I often create little illustrations or icons just for the fun of it. Some of these
-          little pieces have shown up in my other works &mdash; if you look you at my other projects, you will find them! </p>
-      </div>
-      <div class="longimage-wrapper noborder"><div class="longimage"><img src="assets/images/takeout-min.png" class="hor"></div></div>
-      <div class="randimage-wrapper"><div class="randimage"><img src="assets/images/rolls-min.png"></div></div>
-      <div class="randimage-wrapper"><div class="randimage"><img src="assets/images/techs-min.png" class="hor"></div></div>
-      <div class="longimage-wrapper noborder"><div class="longimage"><img src="assets/images/school-min.png" class="hor"></div></div>
-      <div class="randimage-wrapper bottom"><div class="randimage"><img src="assets/images/basic-min.png"></div></div>
-    </div>
-  </div>
-
-  <div class="workpop" id="innopop">
-    <div class="goback clickable graphicgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-    <div class="workcontent intro">
-      <h1> Innovative Design </h1>
-      <p> I joined <a href="http://innovativedesign.club/" target="_blank"> Innovative Design</a> during my Spring semester of my freshman
-        year at Cal. We are UC Berkeley's premier creative agency, and our purpose is making Berkeley beautiful! InnoD is organized into different tiers &mdash;
-        graphic design, photography, videography, and web design. These last two semesters, I was a part of a graphic design tier called Gold Tier.
-        This semster, I am very excited to be on InnoD's Marketing Tier. Our client is InnoD itself &mdash; we create marketing materials for club recruitement
-        campaigns, club events such as our <a href="http://hex.innovativedesign.club/" target="_blank"> HEX Workshops</a>
-        & <a href="http://cmyk.innovativedesign.club/" target="_blank"> CMYK Designathon</a>, and more. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/coverphoto.png" class="hor"></div></div>
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: Adobe Illustrator </h2>
-      <p> Please make sure to check back throughout the rest of this semester to see our other marketing campaigns as they
-        come along! </p>
-      <h2 class="tech"> Spring 2017 Recruitement Campaign </h2>
-      <p> Our theme for recruitement this semester was "build your nest." We ultimatley wanted to convey the idea that InnoD is a creative home
-        for all of its members. Each semester we create several iterations of flyers to pass out on campus during recruitement season. Below are the
-        four iterations we created for this season. Each flyer depicts a representation of the workspace for a member from each of the four different tiers of the club. I was responsible for
-        making the desk of the graphic designer. I love how these turned out &mdash; they do an excellent job of capturing the spirit of Innovative Design. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/flyersfrontback-min.png" class="ver"></div></div>
-    <div class="caption"> <p><em> The front and back of each of the recruitement flyers. </em> </p></div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/flyersall.png" class="hor"></div></div>
-    <div class="caption"> <p><em> All four iterations of the recruitement flyers. The last three were made by other members of my tier. </em> </p></div>
-    <div class="introimage-wrapper"><div class="introimage" style="outline-color: white;"><img src="assets/images/flyerreal-min.png"></div></div>
-    <div class="caption"> <p><em> A picture of the flyers being handed out from our table on Sproul Plaza on campus. </em> </p></div>
-    <div class="workcontent">
-      <h2 class="tech"> InnoD Logo Design </h2>
-      <p> Part of our recruitement campaign every semester is making a new logo out of our existing logo. InnoD's logo is made of three cascading, overlapping circles &mdash;
-        which gives virtually a blank canvas to turn it into whatever you can imagine! This semester I created the design shown below as our new logo. You can see it as the profile
-        picture for our <a href="https://www.facebook.com/InnovativeDesignUCB/" target="_blank"> Facebook page </a>.
-    </div>
-    <div class="introimage-wrapper"><div class="introimage blue"><img src="assets/images/desklogomin.png"></div></div>
-    <div class="caption"> <p><em> Innovative Design's semesterly logo for Spring 2017. </em> </p></div>
-    <div class="workcontent">
-      <h2 class="tech"> HEX: Hone & Explore Design Workshops </h2>
-      <p> Each semester, InnoD holds a series of design workshops hosted by our members open to all students in the
-        Berkeley campus community. The goal of these free lessons is to make all types of design accessible to everyone who
-        is interested in honing their skills or exploring new ones. This semester I will be running a workshop on Branding and Marketing Design.
-        HEX is coming up in just a few weeks, so make sure to check back for all of the finalized marketing materials as well as
-        a summary of the workshop I will be teaching! </p>
-      <h2 class="tech"> Brainstorming: HEX Theme </h2>
-      <p> Every semester we come up with a different idea for the theme of HEX. Since HEX stands for "Hone & Explore," we try to
-        brainstorm ideas that communicate that the mission of HEX is to be a fun adventure in design education. This semester, we
-        decided to brand the event with the overall theme of vintage adventure maps, retro national park posters, and Boy Scout-inspired
-        badges and pins. I am very exicted for the final products! <p>
-      <p> Below are some of my sketches brainstorming ideas for the buttons, stickers, flyers, and other marketing materials that
-         we are going to hand out while advertising HEX. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/hexsketch-min.png"></div></div>
-    <div class="caption bottom"> <p><em> Some of my brainstorming for the marketing materials promoting our HEX Workshops. </em> </p></div>
-  </div>
-
-  <div class="workpop" id="weatherpop">
-    <div class="goback clickable graphicgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-  </div>
-
-  <div class="workpop" id="personalpop">
-    <div class="goback clickable graphicgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-    <div class="workcontent intro">
-      <h1> Laud'Em App </h1>
-      <p> Laud'Em is an app that is dedicated to promoting social altruism and kindness in everyday settings. Last spring, I was hired to
-        create a branding identity for Laud'Em, as well as to design the layout of the app. I am very excited to say that Laud'Em will be out
-        on the App Store and Google Play within the next few weeks &mdash; be sure to check back soon for a link to download the very first app that I
-        designed! </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/laud4-min.png"></div></div>
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: Adobe Illustrator, Sketch, Zeplin </h2>
-      <p> I cannot yet disclose all of the screens of the app, but below are some of the branding materials that I created for
-        Laud'Em. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/laudlogos-min.png"></div></div>
-    <div class="caption bottom"> <p><em> Logo text used for branding & marketing materials. </em> </p></div>
-  </div>
-
-  <div class="workpop" id="weathercodepop">
-    <div class="goback clickable codegoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
-    <div class="workcontent intro">
-      <h1> WeatherOrNot </h1>
-      <p> This project is a Rails webapp called WeatherOrNot, an applictaion that utilizes user feedback forms to create
-        personalized suggestions about what to wear based on the weather of a given day. The inspiration behind the app is that, rather often,
-        the same weather conditions feel quite different for different people. WeatherOrNot is a way for users to always know how to dress prepared
-        without having to take any extra time out of their morning rotinues. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/login.png" class="hor"></div></div>
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: Ruby on Rails, Sass, Twitter Bootstrap </h2>
-      <p> This past semester I took a course about Ruby on Rails. The course covered many of the integral features and powers
-        of the "Rails magic," and I loved it so much that I have started working on developing some side projects on my own
-        using the Rails framework. (In fact, I have gotten so used to firing up the Rails server that I initially developed this
-        site in Rails and then converted it to pure HTML/CSS/JS to put up on GitHub pages.) Rails is the first backend framework that I worked
-        with, and it has definitely inspired me to continue exploring backend development. </p>
-      <p> WeatherOrNot began as my final group project for the Rails course mentioned above.
-        After the semester completed, I forked our project repo and continued to work on the app on my own. As of now, it is still a work in progres. A few of the features
-        I have implemented and am in the process of implementing are: <p>
-          <ul>
-            <li> AJAX calls to a Weather API in order to gather realtime weather stats (Previously, I seeded the database with random weather instances.
-              The user can select if they want to see real data or random data to play around with more diverse weather conditions.) </li>
-            <li> Integrated Bootstrap to add to the styling I previously implemented with vanilla CSS. </li>
-            <li> Improved the UI of the daily feedback forms. </li>
-            <li> Added a calendar which can be used to access and edit feedback forms from previous days. </li>
-          </ul>
-      <p class="bottom"> Please be sure to check back soon to see the final version of the app once I put it up on Heroku! </p>
-    </div>
-  </div>
-
-  <div class="workpop" id="feastercodepop">
-    <div class="goback clickable codegoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
-    <div class="workcontent intro">
-      <h1> Feaster Landing Page </h1>
-      <p> As part of my role as Feaster's Marketing & Branding Designer, I created a <a href="https://www.feasterworks.com" target="_blank">landing page</a> to provide businesses with information about the services and benefits
-        that Feaster provides. I created all of the icons and illustrations on the page, made mockups of the layout, and added CSS styling to the site. Overall I had a
-        lot of fun with this project because it allowed me to utilize both my graphic design and web development skillsets, as well as create a product that realworld
-        businesses are accessing and using. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/feaster6.png"></div></div>
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: Adobe Illustrator, Sketch, CSS </h2>
-      <h2 class="tech"> Layout Design </h2>
-      <p> From the very beginning, I knew that the most important aspect of the landing page design would be presenting the benefits of Feaster in sections
-        that would be easy to parse for the visitor. I prioritized clean diagrams and concise icons as a way to emphasize the information that would be conveyed
-        through the accompying text. Below are some of the mockups I made in Sketch of the aforementioned sections. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/perfectmatch.png" class="hor"></div></div>
-    <div class="caption"> <p><em> A section outlining some of Feaster's distinctive features that separates it from all other
-      marketing options available to restaurant businesses. </em> </p></div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/getoutof.png" class="hor"></div></div>
-    <div class="caption"> <p><em> A section outlining the results a business would see by using Feaster as their marketing tool. </em> </p></div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/todo.png"></div></div>
-    <div class="caption"> <p><em> A simple timeline outlining how a business would set up and use Feaster. </em> </p></div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/fly.png" class="hor"></div></div>
-    <div class="caption"> <p><em> An illustration demonstrating to a business that deals they set up from their personal dashboard are delivered to users on Facebook Messenger. </em> </p></div>
-    <div class="workcontent">
-      <h2 class="tech">Visual Design</h2>
-      <p> My goal was for the site to feel bustling and alive, and I thus illustrated a city filled with restaurants offering deals on Feaster to be the background image. </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/cityscape.png" class="hor"></div></div>
-    <div class="caption bottom"> <p><em> Cityscape illustration full of restaurants signed up on Feaster! </em> </p></div>
-  </div>
-
-  <div class="workpop" id="personalcodepop">
-    <div class="goback clickable codegoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
-    <div class="workcontent intro">
-      <h1> Personal Site Iteration </h1>
-      <p> I for some reason decided that it would be a good idea to build up a personal site from scratch &mdash; no Bootstrap templates,
-        no frameworks, just a blank HTML document with equally blank stylesheets and scripts. Although I am aware that all of the resources for
-        developers out there render this approach rather impratical, I am very glad that I did it. I've never been more confident in my understanding
-        of HTML, CSS, and JavaScript, and it was a lot of fun and extremely rewarding to be able to StackOverflow my way through every obstacle that I
-        encountered and end up with a product that is completely my own! </p>
-      <p> <em> Note: for now, please fullscreen your browser, since I am in the process of optimizing the responsiveness of the homepage! </em> </p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/mysite.png"></div></div>
-    <div class="workcontent">
-      <h2 class="tech"> Technologies: HTML, CSS, JavaScript, Sass </h2>
-      <p> During my first semester of college, I took a course called <em> The Web Design Decal </em>. It was in this class that I was first exposed to
-        the basics of web development. I fell in love immediately. I have been wanting to code up a personal site ever since, and I am very happy to share the
-        final result! </p>
-      <h2 class="tech"> The Process </h2>
-      <p> My ultimate goal with this site was to create something that fits with my style as both a designer and developer. This site isn't just a place
-        to showcase my projects, but also one of my projects itself. </p>
-      <p> I started off by defining my color palette, settig up a layout, and choosing fonts. I also made some fun icons that pop up throughtout the site,
-        adding an element of interactiveness to make the site more than just a static portfolio.</p>
-    </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="assets/images/personal.png"></div></div>
-    <div class="workcontent">
-      <p> The layout I started out with was a very basic one. I had a standard navbar dividing the site up into a few
-        different categories, and clicking on each link led to a different page. After implementing this layout, I
-        got pretty bored of looking at it. I wanted instead something that was a bit more fluid, a bit more interactive,
-        and a lot more fun. So I decide to reimplement the layout into a one page site </p>
-      <p> Currently, all of the content is "stored" either off to the side or at the bottom of the viewport. I implemented page
-        transitions using a combination of CSS and jQuery animations. A menu is also "stored" to the left of the viewport, which
-        a visitor to my site can use to navigate from section to section. </p>
-      <h2 class="tech"> Conclusion </h2>
-      <p> I had a lot of fun implementing this site. I feel so much more confident in not only my web devleopment abilities,
-        but also my problem-solving abilities in both coding and learning in general. </p>
-      <p class="bottom"> I'm happy to say that I was able to create a product that feels very "me," and I'm now even more exited to keep
-        learning and developing. </p>
-    </div>
-  </div>
-
-  <div class="workpop" id="alicepop">
-    <div class="goback clickable artgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
-    <div class="artwork-wrapper"><img src="assets/images/arts.png"></div>
-  </div>
-
-  <div class="workpop" id="interconnectedpop">
-    <div class="goback clickable artgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
-    <div class="artwork-wrapper"><img src="assets/images/interconnected-min.png"></div>
-  </div>
-
-  <div class="workpop" id="woodenpop">
-    <div class="goback clickable artgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
-    <div class="artwork-wrapper"><img src="assets/images/wood.png"></div>
-  </div>
-
-  <div class="workpop" id="robotspop">
-    <div class="goback clickable artgoback"><div class="up"><img src="assets/images/up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
-    <div class="artwork-wrapper"><img src="assets/images/robot.png"></div>
-  </div>
-
-  <div class="wrapper">
-
-  <div class="nav">
-    <div class="nav-copy"></div>
-    <div class="under clickable" id="nav-menu"> Menu <div class="under-line"></div></div>
-    <div class="under clickable" id="nav-about"> About <div class="under-line"></div></div>
-    <a href="home/index" class="nav-logo nav-logo-center">
-        <img src="assets/images/logo2.png">
-    </a>
-  </div>
-  <div class="navbar">
-  </div>
-
-  <div class="fix">
-    <div class="h-wrap" id="fixed">
-      <div class="h-box h-text" id="fixed-h"> <b>all design</b> </div>
-      <div class="h-box h-back" id="fixed-h"></div>
-    </div>
-    <div class="h-wrap" id="fixed">
-      <div class="h-box h-text" id="fixed-h"> <b>all code</b> </div>
-      <div class="h-box h-back" id="fixed-h"></div>
-    </div>
-  </div>
-
-  <div id="wrap">
-      <div id="hello">
-        <div class="color-box clickable">
-          <div id="laptop"><img src="assets/images/laptop.png"></div>
-          <div id="tea"><img src="assets/images/tea.png"></div>
-          <div id="pentool"><img src="assets/images/pentool.png"></div>
-          <div class="inner-color-box clickable"><img src="assets/images/me3-min.png"></div>
+        <div class="terminal-text">
+            <div class="terminal-title">
+                Hello world!
+            </div>
+            <div class="terminal-main">
+                I'm Adriana &mdash; a <em>software engineer</em>, <em>graphic designer</em>, & <em>web developer</em> studying
+                Math & Computer Science at the University of California, Berkeley. Go bears!
+            </div>
+            <div class="terminal-sub">
+                Feel free to explore my site for a synthesis of my projects and
+                experiences. Hover over the menu icon at the top left to get
+                started!
+                <!-- and
+                maybe even a few random geeky math riddles. -->
+            </div>
         </div>
-        <div class="text-box">
-          <h1> Hello world! </h1>
-          <p> I'm Adriana &mdash; a UI/UX engineer, graphic designer, and web
-            developer studying Math & Computer Science at the University of
-            California, Berkeley. If you like elephants,
-            tempura, or string lights, consider me your new best friend. </p>
-          <div class="h-wrap clickable" id="aboutme">
-            <div class="h-box h-text"> <b>about me</b> </div>
-            <div class="h-box h-back"></div>
-          </div>
+        <div class="tooltip-wrap">
+            <div class="tooltip">
+              &#x1F4BB;
+              <span class="tooltiptext">hacker</span>
+            </div>
+            <div class="tooltip">
+              &#x2728;
+              <span class="tooltiptext">dreamer</span>
+            </div>
+            <div class="tooltip">
+              &#x264F;
+              <span class="tooltiptext">scorpio</span>
+            </div>
         </div>
-      </div>
-
-
-      <div class="clickable" id="graphic">
-        <div class="pop" id="one"><img src="assets/images/sushi.png"></div>
-        <div id="graphic-text">design</div>
-        <div id="chop"><img src="assets/images/chop.png"></div>
-        <div id="g-sub-text"> Icons, doodles, random whimsical ideas - you name it. </div>
-        <div id="sushi-wrap">
-          <img src="assets/images/dragon-min.png">
-        </div>
-      </div>
-
-
-    <div class="clickable" id="dev-wrapper">
-      <div id="dev-img"><img src="assets/images/webdev-min.png"></div>
-      <div id="code"><img src="assets/images/code.png"></div>
-      <div id="dev-text">
-        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px">code</h1>
-        <p style="color:white;padding:40px;padding-top:0px;font-size:16px">I coded up this site from scratch - check out
-          some of my other projects too! </p>
-      </div>
     </div>
 
-    <div class="clickable" id="fine-wrapper">
-      <div id="fine-img-wrap">
-        <div id="fine-img"><img src="assets/images/arts.png"></div>
-      </div>
-      <div id="pallet"><img src="assets/images/pallet.png"></div>
-      <div id="fine-text">
-        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px;margin-left:10px">fine art</h1>
-        <p style="color:white;padding:40px;padding-top:0px;font-size:16px;width:180px;margin-top:-20px">As much as I hover over
-        my tablet and keyboard, there's nothing quite like the organic. </p>
-      </div>
-    </div>
+</div>
 
-  </div>
-  </div>
-  <div id="footer">
-    <h1 style="text-align:center;padding-top:60px"> Let's get in touch </h1>
-    <div id="contacts">
-      <div class="contact-wrapper">
-        <a href="https://www.behance.net/adrianababakanian" target="_blank">
-          <div class="contact">
-            <div class="hide"><img style="z-index:100" src="assets/images/be3flip.png"></div>
-            <div class="flip"><img style="z-index:200" src="assets/images/be2.png"></div>
-            <div class="circle"></div>
-          </div>
-        </a>
-      </div>
-      <div class="contact-wrapper">
-        <a href="https://www.pinterest.com/ababakanian/" target="_blank">
-          <div class="contact">
-            <div class="hide"><img style="z-index:100" src="assets/images/pin3flip.png"></div>
-            <div class="flip"><img style="z-index:200" src="assets/images/pin2.png"></div>
-            <div class="circle"></div>
-          </div>
-        </a>
-      </div>
-      <div class="contact-wrapper">
-        <a href="https://github.com/adrianababakanian" target="_blank">
-          <div class="contact">
-            <div class="hide"><img style="z-index:100"src="assets/images/git3flip.png"></div>
-            <div class="flip"><img style="z-index:200" src="assets/images/git2.png"></div>
-            <div class="circle"></div>
-          </div>
-        </a>
-      </div>
-      <div class="contact-wrapper">
-        <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
-          <div class="contact">
-            <div class="hide"><img style="z-index:100" src="assets/images/in3flip.png"></div>
-            <div class="flip"><img style="z-index:200" src="assets/images/in2.png"></div>
-            <div class="circle"></div>
-          </div>
-        </a>
-      </div>
-      <div class="contact-wrapper">
-        <a href="mailto:ababakanian@berkeley.edu" target="_blank">
-          <div class="contact">
-            <div class="hide"><img style="z-index:100" src="assets/images/mail3flip.png"></div>
-            <div class="flip"><img style="z-index:200" src="assets/images/mail2.png"></div>
-            <div class="circle"></div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <b style="font-size: 16px; margin-top: 100px;">I hope to hear from you soon!</b>
-  </div>
+</div>
 
-<!-- um deleted a random closed div tag here so if something weird happens perhaps
-it could be attributed to this?? -->
+
+
+
+
+
+  <!-- <a href="#!/home"class="close lavender" style="color:white">x</a> -->
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- <div class="page" ng-view></div> -->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="about/about.js"></script>
+  <script src="design/design.js"></script>
+  <script src="code/code.js"></script>
+  <script src="prototyping/prototyping.js"></script>
+  <script src="home/home.js"></script>
+  <script src="page1/page1.js"></script>
+  <script src="stubhub/stubhub.js"></script>
+  <script src="personalsite/personalsite.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
 
 </body>
-
-<script>
-
-
-
-</script>
+</html>
