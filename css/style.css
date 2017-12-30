@@ -97,7 +97,7 @@
 
 html, body {
   padding: 0;
-  margin: 0;
+  margin: -2px 0 0 0;
 }
 
 /* unvisited link */
@@ -263,7 +263,8 @@ img {
 .bar {
     width: 30px;
     height: 4px;
-    background-color: rgba(255, 255, 255, 0.8);
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+		background-color: white;
     margin-bottom: 4px;
     border-radius: 1px;
 }
@@ -324,12 +325,14 @@ em{
 .terminal-title{
     font-family: Puritan;
     font-size: 26px;
+		margin: 5px 0;
 }
 
 .terminal-main{
     font-family: Muli;
     font-size: 18px;
-    margin-bottom: 20px;
+		margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .terminal-sub{
@@ -372,12 +375,18 @@ em{
 /* Style The Dropdown Button */
 .dropbtn {
     color: white;
-    padding: 10px 16px 10px 16px;
+    padding: 14px 12px 10px 12px;
     font-size: 14px;
     border: none;
     cursor: pointer;
-    width: 128px;
+    width: 30px;
     color: #303030;
+		border-radius: 4px;
+}
+
+.dropdown:hover .dropbtn{
+		/*background-color: rgba(255, 255, 255, 0.8);*/
+		/*background-color: #F2F1F3;*/
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -392,41 +401,52 @@ em{
     z-index: 2;
 }
 
+.point {
+		width: 0;
+		height: 0;
+		margin-left: 17px;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 12px solid rgba(255, 255, 255, 0.8);
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+		margin-top: 5px;
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
     width: 160px;
     z-index: 1;
     transition: .3s;
-    font-style: italic;
-    border-radius: 2px;
+		color: #dab;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
+		font-family: Karla;
+		text-transform: uppercase;
     padding: 10px 16px;
     text-decoration: none;
     display: block;
+		background-color: #F2F1F3;
+		color: lightgray;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: rgba(242, 241, 243, 0.2);
+		background-color: white;
+		color: #dab;
     transition: .3s;
   }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-    transition: 1s;
-}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .bar {
     transition: .3s;
-    background-color: rgba(48, 48, 48, 1);
+		background-color: #F2F1F3;
+}
+
+.act {
+		background-color: #F2F1F3;
 }
 
 @-moz-keyframes spin {
@@ -621,8 +641,6 @@ em{
 .about-photo {
     position: relative;
     height: 200px;
-    /*background-color: linear-gradient(to left, transparent 0%,#fff 50%,transparent 100%);
-    background: -webkit-linear-gradient(-60deg, rgba(204, 178, 213, 0.9), rgba(189, 104, 170, 0.7), rgba(240, 166, 178, 1) 70%);*/
 }
 
 .me-wrap {
@@ -678,6 +696,54 @@ em{
     100% {
         transform: rotate(360deg);
     }
+}
+
+.hov:hover {
+		color:#dab;
+		cursor: pointer;
+}
+
+.line {
+		height: 1px;
+		max-width: 400px;
+		background: #E8E8E8;
+}
+
+.resume-top {
+		font-family: Domine;
+		font-style: italic;
+		color: #E8E8E8;
+		padding: 5px 0;
+}
+
+.resume-section {
+		font-size: 22px;
+		font-family: Domine;
+		padding: 40px 0 0 0;
+}
+
+.resume-sub-section {
+		font-size: 18px;
+		font-weight: 800;
+		padding: 15px 0 5px 0;
+		color: #dab;
+}
+
+.resume-title {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: Karla;
+		padding: 5px 0 0 0;
+}
+
+.resume-content {
+		padding: 5px 0;
+		max-width: 700px;
+		line-height: 24px;
+}
+
+.uc {
+		color: inherit;
 }
 
 

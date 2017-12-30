@@ -21,20 +21,44 @@
       href="https://fonts.googleapis.com/css?family=PT-Serif">
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Karla">
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Domine">
   <!-- JQuery -->
   <script src="jquery-3.2.1.min.js"></script>
   <!-- AngularJS ngAnimate Google CDN -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
   <script src="../js/app.js"></script>
 
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $("body").css("display", "none");
+
+      $("body").fadeIn(2000);
+
+      $("a.transition").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);
+      });
+
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+</script>
+
 </head>
+<body>
 
     <div class="container">
         <a href="../index.html"class="close lavender" style="color:white">x</a>
         <div class="about-elem about-text">
-            <span style="font-size: 20px;">Nice to meet you! <br>I'm <b>Adriana Babakanian</b>, a third-year
-            Regents' Scholar at the <em>University of California, Berkeley</em>
-            pursuing a double major in <em>Applied Mathematics</em> and <em>Computer
+            <span style="font-size: 20px;">Nice to meet you! <br>I'm <b class="hov">Adriana Babakanian</b>, a third-year
+            Regents' Scholar at the <em class="hov">University of California, Berkeley</em>
+            pursuing a double major in <em class="hov">Applied Mathematics</em> and <em class="hov">Computer
             Science</em>.</span>
             <br>
             <br>
@@ -89,4 +113,56 @@
             </a>
         </div>
         <div class="clearfix"></div>
+        <div style="margin-top:150px">
+            <div class="line"></div>
+            <div class="resume-section"> Education </div>
+
+            <div class="resume-sub-section uc"> University of California, Berkeley </div>
+            <div class="resume-title"> B.A. Applied Mathematics & Computer Science </div>
+            <div class="resume-content"> Regents' and Chancellor's Scholar; Memeber of Upsilon Pi Epsilon, the CS honors society </div>
+            <div class="resume-content" style="margin-top:-5px"> <em> May 2019 </em> </div>
+
+            <div class="resume-section"> Experience </div>
+
+            <div class="resume-sub-section"> eBay - StubHub </div>
+            <div class="resume-title"> Software Engineering Intern </div>
+            <div class="resume-content">
+                Created and then developed a live product aiming to increase engagement and retention on the StubHub platform through a data-oriented
+                approach with impact in customer service efficiency, partnerships, and search engine optimization.
+            </div>
+
+            <div class="resume-sub-section"> Cal Hacks </div>
+            <div class="resume-title"> Director & Lead Designer </div>
+            <div class="resume-content">
+                Facilitate all branding and user interface design decisions for one of the largest and most renowned hackathons in the world.
+            </div>
+
+            <div class="resume-sub-section"> Feaster </div>
+            <div class="resume-title"> UI Engineer, Branding & Marketing Designer </div>
+            <div class="resume-content">
+                Develop, design, and engineer the user experiences of landing pages, dashboards, etc. for Feaster, a digital marketing platform in the restaurant industry that provides customers with personalized, preference-based offers on local food and drink in real-time.
+            </div>
+
+            <div class="resume-section"> Leadership & Activities </div>
+
+            <div class="resume-sub-section"> Innovative Design </div>
+            <div class="resume-title"> Graphic Designer </div>
+            <div class="resume-content">
+                Make conceptual and visual decisions about how to market our club and our mission of making Berkeley beautiful through design.
+            </div>
+
+            <div class="resume-section"> Technical Skills </div>
+            <div class="resume-sub-section"> Code </div>
+            <div class="resume-title"> Web Development </div>
+            <div class="resume-content">JavaScript  &middot;  HTML  &middot;  CSS  &middot;  Sass  &middot;  Git  &middot;  Dust  &middot;  Ruby on Rails  &middot;  Django (in progress)</div>
+            <div class="resume-title"> Programming </div>
+            <div class="resume-content">Java  &middot;  Python  &middot;  C  &middot;  Arduino IDE</div>
+            <div class="resume-sub-section"> Design </div>
+            <div class="resume-content">Adobe Illustrator  &middot;  Sketch  &middot;  Adobe Photoshop  &middot;  Adobe InDesign  &middot;  Zeplin</div>
+            <div class="resume-sub-section"> Prototyping </div>
+            <div class="resume-content">Autodesk Maya  &middot;  Autodesk Fusion 360  &middot;  Experience in 3D printing, laser cutting, soldering, basic circuits, microcontrollers</div>
+            <div class="resume-top" style="margin-top:30px">Updated January 2018</div>
+            <div class="line" style="margin-bottom:150px"></div>
     </div>
+    </div>
+</body>
