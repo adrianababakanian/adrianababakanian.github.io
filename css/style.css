@@ -475,18 +475,22 @@ em{
 }
 
 .close {
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
     border-radius: 44px;
     cursor: pointer;
     position: absolute;
-    right: 13vw;
+    right: 0;
     font-family: Nunito;
-    line-height: 40px;
+    line-height: 27.5px;
     text-align: center;
-    font-size: 38px;
+    font-size: 25px;
     color: white;
     z-index: 2;
+}
+
+.close-icon {
+		margin: 5px 0 0 .5px;
 }
 
 .back-wrap {
@@ -580,6 +584,11 @@ em{
     margin: 15px 0;
     font-weight: 100;
 		margin-bottom: 100px;
+		max-width: 700px;
+}
+
+.sub {
+		margin-bottom: 50px;
 }
 
 .home {
