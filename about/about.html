@@ -38,28 +38,14 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-      $("body").css("display", "none");
-
-
-      // $("body").animate({width:'toggle'},500);
-      $("body").slideDown("slow");
-
-      $("a.transition").click(function(event){
-          event.preventDefault();
-          linkLocation = this.href;
-          $("body").fadeOut(1000, redirectPage);
-      });
-
-      function redirectPage() {
-          window.location = linkLocation;
-      }
-  });
-</script>
+      $('.container').slideDown(1000);
+    });
+  </script>
 
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" style="display:none">
         <a href="../index.html"class="close lavender" style="color:white">
             <i class="fa fa-close close-icon"></i>
         </a>
