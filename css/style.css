@@ -544,7 +544,7 @@ em{
 /*SECTION PAGE STYLING*/
 
 .container{
-  width: 930px;
+  width: 800px;
   height: 500px;
   margin: 0 auto;
   font-family: Muli;
@@ -650,7 +650,7 @@ em{
 }
 
 .bottom {
-    margin-bottom: 120px;
+    margin-bottom: 150px;
 }
 
 .preview-layover{
@@ -667,6 +667,7 @@ em{
     font-family: Karla;
     font-size: 24px;
     font-weight: 800;
+		word-wrap: break-word;
 }
 
 .preview:hover .preview-layover{
