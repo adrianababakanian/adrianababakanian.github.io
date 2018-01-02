@@ -586,6 +586,28 @@ em{
     font-weight: 100;
 		margin-bottom: 100px;
 		max-width: 700px;
+		line-height: 24px;
+}
+
+.section-subtitle a {
+		color: #dab;
+		border-bottom: 2px solid transparent;
+}
+
+.content-text a {
+		color: #dab;
+}
+
+.section-subtitle a:hover {
+		border-bottom: 2px solid #dab;
+		transition: border-bottom .3s;
+		font-weight: bold;
+}
+
+.content-text a:hover {
+		border-bottom: 2px solid #dab;
+		transition: border-bottom .3s;
+		font-weight: bold;
 }
 
 .sub {
@@ -637,7 +659,7 @@ em{
     height: 100%;
     line-height: 300px;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(221, 170, 187, 0.8);
     opacity: 0;
     cursor: pointer;
     margin-top: 0;
@@ -936,8 +958,9 @@ em{
 
 .content-text {
     width: 100%;
-    margin: 15px 0;
+    margin: 40px 0;
     float: left;
+		line-height: 24px;
 }
 
 

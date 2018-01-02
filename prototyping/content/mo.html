@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css"> -->
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../partials/images/logo2.png">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <!-- Google Font Scripts -->
   <link rel="stylesheet" type="text/css"
@@ -39,11 +40,12 @@
         <i class="fa fa-close close-icon"></i>
     </a>
     <h1 class="section-title"> Mo - An Angile Tread Robot </h1>
-    <h4 class="section-subtitle sub"> As both an engineer and a designer, prototyping is for one of the
-      most rewarding forms of art. In Spring of 2017, I took a class at Jacobs Hall here at UC Berkeley on
+    <h4 class="section-subtitle sub"> As both an engineer and a designer, prototyping is for me one of the
+      most rewarding forms of art. In spring 2017, I took a class at UC Berkeley's <a href="http://jacobsinstitute.berkeley.edu/our-space/" target="_blank">Jacobs Institute for Design Innovation</a> on
       prototyping and fabrication where my final project was to design, engineer, build, and program a Bluetooth-controlled
-      robot vehicle from scratch with the ultimate goal of being able to navigate hands-free through a mystery obstacle course.
-      I worked with the Arduino IDE, Arduino Uno microcontrollers, Adafruit Bluefruit modules, and other electronics to motorize
+      robot vehicle from scratch with the ultimate goal of navigating hands-free through a mystery obstacle course.
+      I worked with the <a href="https://www.arduino.cc/en/Main/Software" target="_blank"> Arduino IDE</a>, <a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank"> Arduino Uno</a> microcontrollers, <a href="https://www.adafruit.com/product/2479" target="_blank"> Adafruit Bluefruit</a> modules,
+      <a href="https://www.adafruit.com/product/1463" target="_blank"> neopixels</a>, and other electronics to motorize
       and control a chassis-based robot constructed from scratch using 3D modeling, laser cutting, and other prototyping
       equipment.
       <br>
@@ -52,19 +54,85 @@
       videos of Mo in action!
     </h4>
         <div class="full-image">
-          <video width="100%" height="100%" autoplay loop>
+          <video width="100%" height="100%" autoplay loop muted>
               <source src="../../partials/images/prototyping/mo/spin.m4v" type="video/mp4">
               Your browser does not support the video tag.
           </video>
         </div>
+        <div class="content-text">
+            Since I created Mo completely from scratch, I designed, engineered, and printed all non-electronic parts of Mo in
+            <a href="https://www.autodesk.com/products/fusion-360/overview?mktvar002=724861&mkwid=sOICwxb1H|pcrid|226118724187|pkw|autodesk%20fusion%20360|pmt|e|pdv|c|slid||pgrid|52893102612|ptaid|kwd-488376946792|&intent=&utm_medium=cpc&utm_source=google&utm_campaign=GGL_FUSION360_US_BR_SEM_EXACT%3EBrand&utm_term=autodesk%20fusion%20360&utm_content=sOICwxb1H|pcrid|226118724187|pkw|autodesk%20fusion%20360|pmt|e|pdv|c|slid||pgrid|52893102612|ptaid|kwd-488376946792|&gclid=EAIaIQobChMIi-bkpeu02AIVFNVkCh3JOA2pEAAYASAAEgK8bfD_BwE&dclid=CN7KiajrtNgCFUv0ZAodRJMORg" target="_blank"> Autodesk Fusion 360</a>, a 3D CAD program that
+            allows for desiging, engineering, and simulating. I went through many iterations of designing in order to get the chassis of the robot
+            just right. Factors to consider included properly designating internal space for the electronics, engineering the motor compartments and
+            accompanying fasteners, and designing for the inclusion of magnets to solidfy the encasing structure while also allowing for easy access to
+            the internal electronics.
+            <br></br>
+            Below are some different views of the Fusion file I created for Mo's chassis.
+        </div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/side.png" class="height"></div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/top.png" class="height"></div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/twist.png" class="height"></div>
+        <div class="content-text">
+            The finalized, full-poly version of the chassis and hinged door took almost 12 hours to print on the
+            <a href="https://ultimaker.com/en/products/ultimaker-2-plus" target="_blank"> Ultimaker 2+</a>, a wonderful and
+            user-friendly 3D printer. All of my tweaking, precise measuring, and iterating paid off when I ended up with the
+            compact and flush chassis shown below.
+        </div>
         <div class="half-image"><img src="../../partials/images/prototyping/mo/open.png"></div>
         <div class="half-image"><img src="../../partials/images/prototyping/mo/closed.png"></div>
-        <div class="half-image"><img src="../../partials/images/prototyping/mo/off.png"></div>
-        <div class="half-image"><img src="../../partials/images/prototyping/mo/on.png"></div>
-        <div class="half-image"><img src="../../partials/images/prototyping/mo/glow_1.png"></div>
-        <div class="half-image"><img src="../../partials/images/prototyping/mo/glow_2.png"></div>
         <div class="content-text">
-
+            Since one of the main challeneges in the final exam obstacle course was a steeply-inclined ramp
+            that needed to be both ascended and descended, I decided to engineer Mo as a tread-based robot in order to be able to face the
+            challenge of simultaneously having the capacity to ascend surely and descend without slipping. I 3D-printed dozens of treads that
+            I hooked together using fine metal rods, which ultimately encased two laser-cut acrylic faces that enclosed the three gears
+            composing the triangular-shaped tread hold.
+            <br></br>
+            Designing the files to be sent to the laser-cutter required just as many iterations as did the 3D chassis files. I made 2D laser cut
+            files in <a href="">Illustrator</a> with appropriately placed and sized holes for gears I 3D printed to match with the tread cable.
+            Once everything was cut and printed, I sandwiched the gears between the acrylic walls and held everything together with nuts and bolts
+            and appropriate spacers. This made for an easy way to fit the cable tread over the gears while allowing for future iterations.
+            <br></br>
+            I designed the lead gears to attach to the motors that nested in Mo's chassis, so the treads were firmly connected to the chassis body
+            while also being easily adjustable as shown below.
+        </div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/off.png"></div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/mid.png"></div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/on.png"></div>
+        <div class="content-text">
+            One of my goals throughout the process of constructing the robot was to make all of the parts structurally reliable while allowing for
+            flexibility. As such, I compartamentalized Mo's design in order to allow for an easy take-apart process to facilitate debugging, electronic
+            access, updates, and maintenance. In addition to the treads being easily removed from the chassis body, and the treads being easily
+            deconstructed, I also engineered a flushed mangentized door that enabled a quick take-apart process with very little structural interference.
+            <br></br>
+            In the video below I have provided a quick demo of Mo's sturdy decomposability.
+        </div>
+        <div class="full-image">
+          <video width="100%" height="100%" autoplay loop muted>
+              <source src="../../partials/images/prototyping/mo/demo.m4v" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="content-text">
+            Mo is controllable completely via Bluetooth thanks to an <a href="https://www.adafruit.com/product/2479" target="_blank"> Adafruit Bluefruit</a> module
+            that I programmed into Mo's circuit board. I coded the controls into an app for both iOS and Android devices.
+        </div>
+        <div class="full-image" style="margin-top:-20px">
+          <video width="100%" height="100%" autoplay loop muted>
+              <source src="../../partials/images/prototyping/mo/go.m4v" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="content-text">
+            After programming Mo's controls, I decided to add a ring of <a href="https://www.adafruit.com/product/1463" target="_blank"> neopixels</a>
+            to each of Mo's tread wheels that make chasing patterns to correspond with different actions. All of Mo's code was written in the
+            <a href="https://www.arduino.cc/en/Main/Software" target="_blank"> Arduino IDE</a>. Check out my code for this project on <a href="https://github.com/adrianababakanian/mo_code" target="_blank">Github</a>.
+        </div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/glow_1.png"></div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/neo.png"></div>
+        <div class="third-image"><img src="../../partials/images/prototyping/mo/glow_2.png"></div>
+        <div class="content-text" style="padding-bottom:150px">
+            Special thanks to the team and resources at the <a href="http://invent.citris-uc.org/" target="_blank">CITRIS Invention Lab</a> for the support and assistance that
+            made this project possible and for giving me a lab to call home for the semester!
         </div>
 
 </div>
