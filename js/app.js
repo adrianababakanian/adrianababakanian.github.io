@@ -25,7 +25,7 @@ $(document).ready(function(){
     });
 
     $('.dropdown').click(function() {
-        $('.dropdown-content').toggle();
+        $('.dropdown-content').fadeToggle(200,"linear");
         $(".bar").toggleClass("act");
     });
 
