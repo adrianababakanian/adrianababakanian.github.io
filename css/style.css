@@ -567,6 +567,10 @@ em{
 	/*animation: fadein 1s;*/
 }
 
+.about-cont {
+		width: 900px;
+}
+
 @media (max-width: 1000px) {
     .container {
         width: 80vw;
@@ -827,7 +831,7 @@ em{
 
 .about-photo {
     position: relative;
-    height: 200px;
+    height: 400px;
 }
 
 .me-wrap {
@@ -851,6 +855,7 @@ em{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+		width: 250px;
 }
 
 .clearfix{
@@ -981,7 +986,6 @@ em{
     position: relative;
     margin: 15px 0;
     overflow: hidden;
-    background: gray;
 }
 
 .long-image {
@@ -991,6 +995,22 @@ em{
     position: relative;
     margin: 15px 0;
     overflow: hidden;
+}
+
+.th {
+		height: 300px;
+}
+
+.fh {
+		height: 400px;
+}
+
+.st {
+		height: 620px;
+}
+
+.iphone {
+		height: 530px;
 }
 
 .content-text {
@@ -1015,4 +1035,71 @@ em{
   .full-image {
       width: 100%;
   }
+	.preview {
+			width: 400px;
+	}
+
+	.about-elem {
+			width: 300px;
+			padding: 0;
+			margin: 0 auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			float: none;
+			text-align: left;
+	}
+
+	.me-wrap {
+			width: 300px;
+			margin: 0 auto;
+	}
+
+	.container {
+			width: 80vw;
+	}
+
+	.about-cont {
+			width: 80vw;
+	}
+
+	.linker-wrap {
+			margin-top: 45px;
+	}
+}
+
+@media (max-width: 500px) {
+		.preview {
+				width: 300px;
+				height: 250px;
+				margin: 0 auto;
+		}
+
+		.full-image {
+				height: 250px;
+		}
+
+		.half-image, .third-image, .quarter-image, .iphone {
+				height: 250px;
+				width: 300px;
+		}
+
+		.th {
+				width: 300px;
+				height: 100px;
+		}
+
+		.fh {
+				width: 300px;
+				height: 200px;
+		}
+
+		.st {
+				width: 300px;
+				height: 400px;
+		}
+
+		.long-image {
+				width: 300px;
+				height: 50px;
+		}
 }
