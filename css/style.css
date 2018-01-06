@@ -434,7 +434,7 @@ em{
 
 /* Links inside the dropdown */
 .dropdown-content a {
-		font-family: Karla;
+		font-family: Karla,sans-serif;
 		text-transform: uppercase;
     padding: 10px 16px;
     text-decoration: none;
@@ -571,26 +571,9 @@ em{
 		width: 900px;
 }
 
-@media (max-width: 1000px) {
-    .container {
-        width: 80vw;
-    }
-
-    .preview{
-        width: 45%;
-        margin-left: 5%;
-    }
-
-    .half-image {
-      margin: 2vh 2vw;
-      width: 46vw;
-      height: 200px;
-    }
-}
-
 .section-title{
     width: 100%;
-    font-family: Karla;
+    font-family: Karla,sans-serif;
     font-size: 24px;
     margin: 15px 0;
 		text-transform: uppercase;
@@ -634,8 +617,12 @@ em{
 		margin: 0 0 150px 0;
 		line-height: 36px;
 		text-transform: uppercase;
-		font-family: Karla;
+		font-family: Karla,sans-serif;
 		margin-bottom: 150px;
+}
+
+.back-button a {
+		color: #E8E8E8;
 }
 
 .eighteen {
@@ -704,7 +691,7 @@ em{
     cursor: pointer;
     margin-top: 0;
     position: absolute;
-    font-family: Karla;
+    font-family: Karla,sans-serif;
     font-size: 24px;
     font-weight: 800;
 		word-wrap: break-word;
@@ -778,7 +765,7 @@ em{
 
 /* Links inside the dropdown */
 .dropdown-content_alt a {
-		font-family: Karla;
+		font-family: Karla,sans-serif;
 		text-transform: uppercase;
     padding: 10px 16px;
     text-decoration: none;
@@ -924,7 +911,7 @@ em{
 .resume-title {
 		text-transform: uppercase;
 		font-size: 18px;
-		font-family: Karla;
+		font-family: Karla,sans-serif;
 		padding: 5px 0 0 0;
 }
 
@@ -1065,6 +1052,16 @@ em{
 	.linker-wrap {
 			margin-top: 45px;
 	}
+
+	.container {
+			width: 80vw;
+	}
+}
+
+@media (max-width: 750px) {
+		.home {
+				display: none;
+		}
 }
 
 @media (max-width: 500px) {
@@ -1072,6 +1069,10 @@ em{
 				width: 300px;
 				height: 250px;
 				margin: 0 auto;
+		}
+
+		.preview-layover {
+				line-height: 250px;
 		}
 
 		.full-image {

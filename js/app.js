@@ -38,4 +38,8 @@ $(document).ready(function(){
     $('.home').click(function() {
         $(".dropdown_alt").toggleClass("hide");
     });
+
+    $('.magenta').click(function() {
+        $(".terminal").toggleClass("act");
+    });
 });
