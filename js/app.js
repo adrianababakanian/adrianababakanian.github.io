@@ -62,4 +62,20 @@ $(document).ready(function(){
         $(".terminal").removeClass("shift");
         $(".intro-button").addClass("intro-shifter");
     });
+
+    $('.hider').click(function() {
+        $(".box").toggleClass("navCoverShow");
+        $(".header-continer").toggleClass("shiftUp");
+    });
+
+    if ($(window).width() < 1000) {
+        $("img").addClass("forceWidth");
+    }
+    else {
+       $("img").removeClass("forceWidth");
+    }
+
+
+
+
 });

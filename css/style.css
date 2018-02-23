@@ -150,6 +150,14 @@ img {
 		animation: fadein 2s;
 }
 
+.forceWidth {
+		height: 100%;
+		width: auto;
+		left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 video {
 		animation: fadein 2s;
 }
@@ -307,7 +315,7 @@ video {
 .logo-wrapper{
     width: 100%;
     height: 80px;
-    margin: 0 0 50px 0;
+    margin: 70px 0 50px 0;
 }
 
 .logo{
@@ -342,7 +350,7 @@ video {
 }
 
 .fe {
-		margin-top: -480px;
+		margin-top: -350px;
 }
 
 .show {
@@ -618,10 +626,122 @@ em{
 
 
 
-
-
-
 /*SECTION PAGE STYLING*/
+
+.header {
+	width:100%;
+	height: 60px;
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	top:0px;
+	z-index: 9999;
+}
+
+.header-container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.navItem {
+		line-height: 60px;
+		font-family: Muli;
+		font-size: 14px;
+		color: #dab;
+		float: right;
+		padding: 0 10px;
+		cursor: pointer;
+		font-weight: lighter;
+		border-bottom: 2px solid transparent;
+}
+
+.navItemAlt {
+		color: #303030;
+}
+
+.em {
+		font-family: Muli;
+		font-weight: 600;
+}
+
+.stayPres {
+		display: block;
+}
+
+.hider {
+		display: none;
+		padding: 0 10px;
+		padding-right: 8vw;
+		margin-top: 20px;
+		line-height: 60px;
+		font-family: Muli;
+		font-size: 14px;
+		color: #dab;
+		float: right;
+		cursor: pointer;
+		font-weight: lighter;
+}
+
+
+.navIcon {
+		line-height: 50px;
+		font-family: Muli;
+		font-size: 14px;
+		color: #dab;
+		padding: 0 10px;
+		cursor: pointer;
+		font-weight: lighter;
+}
+
+.navItem:hover{
+		font-weight: bold;
+		border-bottom: 2px solid #dab;
+}
+
+.navItemAlt:hover {
+		border-bottom: 2px solid #303030;
+}
+
+.navCover {
+	display: none;
+	width: 100vh;
+	height: 100vw;
+	background: #dab;
+}
+
+.box {
+	width: 100%;
+	height: 100vh;
+	background: #dab;
+	position: fixed;
+	z-index: 99999;
+	display: none;
+	top: 0;
+}
+
+.socialLinks {
+	width: 100%;
+}
+
+.navCoverItem {
+	line-height: 60px;
+	font-family: Muli;
+	font-size: 16px;
+	color: #fff;
+	padding: 0 10px;
+	cursor: pointer;
+	font-weight: lighter;
+	text-align: center;
+	width: 100%;
+}
+
+.navCoverItem:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.navCoverShow {
+	display: block;
+}
 
 .container{
   width: 800px;
@@ -1120,10 +1240,30 @@ em{
 
 	.linker-wrap {
 			margin-top: 45px;
+
+	.preview {
+			width: 100%;
 	}
 
 	.container {
 			width: 80vw;
+	}
+
+	.header-container a {
+		pointer-events: none;
+		display: none;
+	}
+
+	.navItem {
+		display: none;
+	}
+
+	.hider {
+		display: block;
+	}
+
+	.preview {
+		width: 100%;
 	}
 }
 
