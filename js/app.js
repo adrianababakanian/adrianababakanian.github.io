@@ -22,21 +22,21 @@ $(document).ready(function(){
 
     // Dropdown Animations
 
-    $('.dropdown').click(function() {
-        $('.dropdown-content').fadeToggle(200,"linear");
-        $(".bar").toggleClass("act");
-        $(".terminal").removeClass("shift");
-    });
-
-    $('.dropdown_alt').click(function() {
-        $('.dropdown-content_alt').toggle();
-        $(".bar_alt").toggleClass("act_alt");
-        $(".home").toggleClass("hide");
-    });
-
-    $('.home').click(function() {
-        $(".dropdown_alt").toggleClass("hide");
-    });
+    // $('.dropdown').click(function() {
+    //     $('.dropdown-content').fadeToggle(200,"linear");
+    //     $(".bar").toggleClass("act");
+    //     $(".terminal").removeClass("shift");
+    // });
+    //
+    // $('.dropdown_alt').click(function() {
+    //     $('.dropdown-content_alt').toggle();
+    //     $(".bar_alt").toggleClass("act_alt");
+    //     $(".home").toggleClass("hide");
+    // });
+    //
+    // $('.home').click(function() {
+    //     $(".dropdown_alt").toggleClass("hide");
+    // });
 
     // Terminal Animations
 
@@ -64,8 +64,14 @@ $(document).ready(function(){
     });
 
     $('.hider').click(function() {
-        $(".box").toggleClass("navCoverShow");
-        $(".header-continer").toggleClass("shiftUp");
+        $(".box").addClass("navCoverShow");
+        $(".header-continer").addClass("shiftUp");
+    });
+
+    $('.navClose').click(function() {
+        $(".box").removeClass("navCoverShow");
+        $(".header-continer").removeClass("shiftUp");
+        $(".terminal").removeClass("shift");
     });
 
     if ($(window).width() < 1000) {
@@ -74,6 +80,18 @@ $(document).ready(function(){
     else {
        $("img").removeClass("forceWidth");
     }
+
+    $(window).scroll(function() {
+    if($(window).scrollTop() > 0) {
+        $(".homeHeader").addClass("homeHeaderFill");
+        $(".footer").addClass("footerShift");
+        $(".fader").addClass("show");
+    } else {
+        $(".homeHeader").removeClass("homeHeaderFill");
+        $(".footer").removeClass("footerShift");
+        $(".fader").removeClass("show");
+    }
+    });
 
 
 
