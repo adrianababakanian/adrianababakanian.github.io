@@ -76,9 +76,11 @@ $(document).ready(function(){
 
     if ($(window).width() < 1000) {
         $("img").addClass("forceWidth");
+        $(".flyer").removeClass("forceWidthAutoHeight");
     }
     else {
        $("img").removeClass("forceWidth");
+       $(".flyer").addClass("forceWidthAutoHeight");
     }
 
     $(window).scroll(function() {

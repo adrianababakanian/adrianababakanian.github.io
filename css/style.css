@@ -158,6 +158,11 @@ img {
     transform: translate(-50%, -50%);
 }
 
+.fullWidthAutoHeight {
+		width:100%;
+		height: auto;
+}
+
 video {
 		animation: fadein 2s;
 }
@@ -713,7 +718,21 @@ em{
 }
 
 .navClose {
-		top: 15px;
+		top: 8px;
+		right: 8vw;
+}
+
+.secClose {
+		top: 13px;
+		right: 8vw;
+		color: #dab;
+}
+
+.secCloseLarge {
+		right: 18vw;
+}
+
+.secCloseSmall {
 		right: 8vw;
 }
 
@@ -751,6 +770,21 @@ em{
 		font-weight: lighter;
 }
 
+.navIconCover {
+		height: 60px;
+		width: 60px;
+		margin: 0 auto;
+		z-index: 10;
+		line-height: 50px;
+		font-family: Muli;
+		font-size: 14px;
+		color: #dab;
+		padding: 0 10px;
+		cursor: pointer;
+		font-weight: lighter;
+		position: relative;
+}
+
 .navItem:hover{
 		font-weight: bold;
 		border-bottom: 2px solid #dab;
@@ -772,7 +806,7 @@ em{
 	height: 100vh;
 	background: #dab;
 	position: fixed;
-	z-index: 5;
+	z-index: 6;
 	display: none;
 	top: 0;
 }
@@ -789,11 +823,14 @@ em{
 	cursor: pointer;
 	font-weight: lighter;
 	text-align: center;
-	width: 100%;
+	margin: 0 auto;
+	width: 100px;
+	border-bottom: 2px solid transparent;
 }
 
 .navCoverItem:hover {
 	border-bottom: 2px solid #fff;
+	font-weight: 600;
 }
 
 .navCoverShow {
@@ -1277,9 +1314,6 @@ em{
   .full-image {
       width: 100%;
   }
-	.preview {
-			width: 400px;
-	}
 
 	.about-elem {
 			width: 300px;
@@ -1326,6 +1360,15 @@ em{
 		display: block;
 	}
 
+}
+
+@media (max-width: 900px) {
+	.preview {
+			width: 100%;
+	}
+	.overrideBottom {
+			margin-bottom: 0;
+	}
 }
 
 @media (max-width: 750px) {
