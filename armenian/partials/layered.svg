@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 809.92">
   <defs>
 
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Puritan');
+    </style>
+
     <style>.cls-1,.cls-12,.cls-13,.cls-15,.cls-19,.cls-7{fill:#3c78d8;}
       .cls-11,.cls-14,.cls-2,.cls-3,.cls-5,.cls-6,.cls-8{fill:none;}
       .cls-10,.cls-13,.cls-15,.cls-16,.cls-17,.cls-18,.cls-2,.cls-3,.cls-8,.cls-9{stroke:#3c78d8;}
@@ -16,7 +20,7 @@
       .cls-11{stroke-width:8px;}
       .cls-12,.cls-13,.cls-14,.cls-18{stroke-width:1.5px;}
       .cls-15{stroke-width:0.5px;}
-      .cls-19{font-size:14px;font-family:Puritan-Bold, Puritan;font-weight:700;}
+      .cls-19{font-size:14px;font-family:'Puritan';font-weight:700;}
 
       .cls-2 {
         animation: bounce 2s infinite ease-in-out;
