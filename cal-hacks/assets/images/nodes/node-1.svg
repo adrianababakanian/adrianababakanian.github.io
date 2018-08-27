@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="455px" viewBox="0 0 174 455" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>node-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+      <style type="text/css"><![CDATA[
+
+
+      .hide {
+      display: block;
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+    ]]></style>
+    </defs>
+    <g id="node-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-2" transform="translate(4.000000, 4.000000)" stroke="#3B9BC2" stroke-width="6">
+            <path d="M120,129 L120,267" id="Line-3-Copy-19" stroke-linecap="round"></path>
+            <path d="M158,114 L158,142" id="Line-3-Copy-20" stroke-linecap="round"></path>
+            <path d="M84,16 L157,113" id="Line-3-Copy-23" stroke-linecap="round"></path>
+            <path d="M85,82 L120,128" id="Line-3-Copy-24" stroke-linecap="round"></path>
+
+              <path class='test hide' d="M78,336 L13.3604061,432.684807" id="Line-3-Copy-21" stroke-linecap="round"></path>
+              <path class='test hide' d="M79,216 L79,335" id="Line-3-Copy-25" stroke-linecap="round"></path>
+              <circle class='node test hide' cx="79" cy="205" r="8"></circle>
+              <circle class='node test hide' cx="8" cy="439" r="8"></circle>
+
+            <circle class='node' cx="79" cy="74" r="8"></circle>
+            <circle class='node' cx="120" cy="277" r="8"></circle>
+            <circle class='node' cx="158" cy="151" r="8"></circle>
+            <circle class='node' cx="78" cy="8" r="8"></circle>
+        </g>
+    </g>
+</svg>

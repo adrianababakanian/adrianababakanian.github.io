@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cal Hacks 5.0</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel='stylesheet' href='./assets/style.css'>
+
+  <!-- Google fonts. -->
+  <link href='https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:600,800' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Animate on scroll CSS library. -->
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script>
+  $(function() {
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: 'ease-in-sine',
+      delay: 0,
+    });
+  });
+  </script>
+
+  <!-- Local JavaScript. -->
+  <script src='./assets/index.js'></script>
+</head>
+<body>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Navigation bar. -->
+  <div class='header' data-aos='fade-down' data-aos-duration=600 data-aos-delay=0>
+
+    <div class='header-container'>
+      <a href='#home' class='home'><img src='./assets/images/home_1.png'><img id='text' src='./assets/images/home_2.png'></a>
+      <div class='nav'>
+        <a href='#about' class='nav-item'>About</a>
+        <a href='#speakers' class='nav-item'>Speakers</a>
+        <a href='#sponsor' class='nav-item'>Sponsor</a>
+        <a href='#faq' class='nav-item'>FAQ</a>
+        <a href="javascript:void(0);" id='hamburger' class="icon" onclick="toggleMobileNav()">
+          <i class="fa fa-bars stretch"></i>
+        </a>
+        <div class='nav-item apply'>Apply</div>
+        <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank">
+          <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%">
+        </a>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class='mobile-nav' id='mobile-nav'>
+    <a href="javascript:void(0);" id='close' class="mobile-icon" onclick="toggleMobileNav()">
+      <i class="fa fa-close stretch"></i>
+    </a>
+    <a href=''class='mobile-nav-item'></a>
+    <a href=''class='mobile-nav-item'></a>
+    <a href='#about' onclick="toggleMobileNav()" class='mobile-nav-item'>About</a>
+    <a href='#speakers' onclick="toggleMobileNav()" class='mobile-nav-item'>Speakers</a>
+    <a href='#sponsor' onclick="toggleMobileNav()" class='mobile-nav-item'>Sponsor</a>
+    <a href='#faq' onclick="toggleMobileNav()" class='mobile-nav-item'>FAQ</a>
+  </div>
+
+  <!-- Main content. -->
+  <div class='container'>
+
+    <!-- Title. -->
+    <div class='section' id='home'>
+      <div class='buffer'></div>
+      <div class='title' data-aos='fade-up'>
+        <h1 class='main'> It's time for round 5.0 </h1>
+        <h2 class='sub'> November 2-4, 2018 <br/> California Memorial Stadium </h2>
+        <div class='apply'> Apply now </div>
+      </div>
+      <div class='ddoski' data-aos='fade-up-left' data-aos-duration=700><img src='./assets/images/ddoski.png'/></div>
+      <div class='node node-1' data-aos='fade-up-right' data-aos-delay=100><img src='./assets/images/nodes/node-1.svg'/></div>
+      <div class='node node-2' data-aos='fade-up-left' data-aos-delay=0><img src='./assets/images/nodes/node-2.svg'/></div>
+    </div>
+
+    <div class='buffer first'></div>
+
+    <!-- About. -->
+    <div class='section' id='about' data-aos='fade-up-right'>
+      <h2> The world's largest collegiate hackathon is back! </h2>
+      <p>
+        Last fall, Cal Hacks brought together 2,200 attendees from 50 universities and 5 countries to build everything from mind-controlled vehicles to artificial intelligence for language learning.
+        <br/><br/>
+        For Cal Hacks 5.0, we’re building on our tradition of technical & inclusive excellence by bringing together the world’s brightest collegiate hackers and guiding them in creating impactful, diverse, & innovative projects.
+      </p>
+      <div class='node node-3' data-aos='fade-up'><img src='./assets/images/nodes/node-3.svg'/></div>
+      <div class='node node-4' data-aos='fade-up' data-aos-delay=200><img src='./assets/images/nodes/node-4.svg'/></div>
+    </div>
+
+    <div class='small-buffer'></div>
+
+    <!-- Speakers. -->
+    <div class='section' id='speakers' data-aos='fade-up'>
+      <h2> Speakers </h2>
+      <p>
+        Leaders, mentors, sponsors, and other infulential members of the tech community come to Cal Hacks to interact and inspire. Stay tuned for this year’s speakers and judges!
+      </p>
+    </div>
+
+    <div class='carousel' data-aos='fade-up'>
+      <div class='overlay'></div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+      <div class='tile'>
+        <div class='tile-photo'>
+        </div>
+        <div class='name'>Lorem ipsum</div>
+        <div class='about'>Dolor sit amet</div>
+      </div>
+    </div>
+
+    <div class='large-buffer'>
+      <div class='node node-5' data-aos='fade-up'><img src='./assets/images/nodes/node-5.svg'/></div>
+      <div class='node node-6' data-aos='fade-up'><img src='./assets/images/nodes/node-6.svg'/></div>
+    </div>
+
+    <!-- Sponsor. -->
+    <div class='section' id='sponsor' data-aos='fade-up'>
+      <h2> Sponsor </h2>
+      <p>
+        Each year, our sponsors help us unite thousands of attendees from dozens of universities across the globe — bringing together the world's brightest collegiate hackers for 36 hours straight.
+        <br/><br/>
+        Sponsoring Cal Hacks connects you with a diverse group of students that aim to innovate. Our hackers have shipped their Cal Hacks projects to thousands of people, founded YC startups, and conducted groundbreaking research. Join us in facilitating a new culture of doing and creating.
+        <br/><br/>
+        Thank you so much for your interest in helping us fuel the future of tech. Please feel free to reach out to us via email and leave your email below to receive updates!
+        <br/><br/>
+        Below are a handful of past sponsors that have been an integral part of our journey!
+      </p>
+      <div class='logo-grid'>
+        <div class='row'>
+          <div class='column'>
+            <img src='./assets/images/sponsors/facebook.png'/>
+            <img src='./assets/images/sponsors/a16z.png'/>
+            <img src='./assets/images/sponsors/confluent.png'/>
+            <img src='./assets/images/sponsors/nec.png'/>
+            <img src='./assets/images/sponsors/pear.png'/>
+            <img src='./assets/images/sponsors/sparkpost.png'/>
+            <img src='./assets/images/sponsors/nasdaq.png'/>
+          </div>
+          <div class='column'>
+            <img src='./assets/images/sponsors/google.png'/>
+            <img src='./assets/images/sponsors/blackrock.png'/>
+            <img src='./assets/images/sponsors/gnosis.png'/>
+            <img src='./assets/images/sponsors/expo.png'/>
+            <img src='./assets/images/sponsors/mongodb.png'/>
+            <img src='./assets/images/sponsors/sap.png'/>
+            <img src='./assets/images/sponsors/thehouse.png'/>
+          </div>
+          <div class='column'>
+            <img src='./assets/images/sponsors/cisco.png'/>
+            <img src='./assets/images/sponsors/deepscale.png'/>
+            <img src='./assets/images/sponsors/ironfire.png'/>
+            <img src='./assets/images/sponsors/pavlov.png'/>
+            <img src='./assets/images/sponsors/paypal.png'/>
+            <img src='./assets/images/sponsors/ibm.png'/>
+          </div>
+          <div class='column'>
+            <img src='./assets/images/sponsors/microsoft.png'/>
+            <img src='./assets/images/sponsors/consensys.png'/>
+            <img src='./assets/images/sponsors/mlab.png'/>
+            <img src='./assets/images/sponsors/opentable.png'/>
+            <img src='./assets/images/sponsors/pwc.png'/>
+            <img src='./assets/images/sponsors/skydeck.png'/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='buffer'></div>
+
+    <div class='section' id='faq' data-aos='fade-up'>
+      <h2> FAQ </h2>
+      <div class='faq-content'>
+        <div class='column'>
+
+          <div class='faq-item'>
+            <div class='question'>
+              Lorem ipsum dolor sit amet.
+            </div>
+            <div class='answer'>
+              Integer commodo commodo est, ac congue nunc luctus vel. In hac habitasse platea dictumst. Pellentesque eget nunc elementum, mollis neque eu, dapibus lorem. Donec viverra facilisis neque, eu scelerisque leo blandit sit amet. Cras sed nibh et nulla ultricies fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+            </div>
+          </div>
+
+          <div class='faq-item'>
+            <div class='question'>
+              Donec feugiat lacus ut nibh porttitor, quis porttitor dolor aliquam. Sed at leo eget massa porttitor eleifend.
+            </div>
+            <div class='answer'>
+              Maecenas varius dignissim nulla, quis pharetra urna fermentum nec. Praesent maximus ex ac ultricies consectetur. Vestibulum porta, quam in faucibus consectetur, nibh nisl fermentum ex, nec dapibus ante tellus eget tortor. Nulla facilisi. Fusce commodo pharetra ex, a dapibus libero tristique quis.
+            </div>
+          </div>
+
+        </div>
+
+        <div class='column'>
+
+          <div class='faq-item'>
+            <div class='question'>
+              Lorem ipsum dolor sit amet.
+            </div>
+            <div class='answer'>
+              Integer commodo commodo est, ac congue nunc luctus vel. In hac habitasse platea dictumst. Pellentesque eget nunc elementum, mollis neque eu, dapibus lorem. Donec viverra facilisis neque, eu scelerisque leo blandit sit amet. Cras sed nibh et nulla ultricies fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+            </div>
+          </div>
+
+          <div class='faq-item'>
+            <div class='question'>
+              Donec feugiat lacus ut nibh porttitor, quis porttitor dolor aliquam. Sed at leo eget massa porttitor eleifend.
+            </div>
+            <div class='answer'>
+              Maecenas varius dignissim nulla, quis pharetra urna fermentum nec. Praesent maximus ex ac ultricies consectetur. Vestibulum porta, quam in faucibus consectetur, nibh nisl fermentum ex, nec dapibus ante tellus eget tortor. Nulla facilisi. Fusce commodo pharetra ex, a dapibus libero tristique quis.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
