@@ -249,11 +249,19 @@ body {
           background: get(lazuli);
           color: get(cornflower);
         }
+
+        @media (max-width: breakpoint(large)) {
+          margin: 8px 40px;
+        }
+
+        @media (max-width: breakpoint(small)) {
+          margin: 8px 0;
+        }
       }
 
       @media (max-width: 820px) {
         padding: 10px;
-        width: calc(100%);
+        width: calc(100% - 40px);
 
         &#home {
           padding: 40px 0;
@@ -552,7 +560,6 @@ body {
   }
 
   #sponsor, #faq {
-    //background: get(dust);
     background-image: url('./images/dust.png');
     background-size: 80% 100%;
     background-repeat: no-repeat;
@@ -560,6 +567,10 @@ body {
 
     @media (max-width: 920px) {
       background-size: 100% 100%;
+      margin-top: 40px;
+      background-color: get(dust);
+      border-radius: 8px;
+      background-image: none;
     }
 
     p {
@@ -567,11 +578,12 @@ body {
     }
 
     @media (max-width: breakpoint(small)) {
-      margin-left: -20px;
       border-radius: 0;
+      width: calc(100% + 40px);
+      margin-left: -20px;
 
-      h2 { padding: 0 30px; }
-      p { padding: 0 30px; }
+      h2 { padding: 0 20px; }
+      p { padding: 0 20px; }
     }
 
     .logo-grid {
@@ -615,7 +627,7 @@ body {
     display: flex;
     flex-direction: row;
     width: calc(100% - 360px);
-    max-width: 600px;
+    max-width: 680px;
     padding: 0 180px;
 
     @media (max-width: breakpoint(large)) {
@@ -629,8 +641,16 @@ body {
     }
 
     .column {
-      flex-grow: 1;
-      margin-right: 30px;
+      width: 50%;
+      &.left { margin-right: 30px; }
+      &.right { margin-right: 0; }
+
+      @media (max-width: 730px) {
+        width: 100%;
+        &.left {
+          margin-right: 0;
+        }
+      }
     }
 
     .faq-item {

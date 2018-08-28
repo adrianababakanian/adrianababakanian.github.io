@@ -158,17 +158,23 @@ body {
         border-radius: 4px;
         padding: 0 30px;
         font-weight: 800;
-        margin: 5px 180px;
+        margin: 8px 180px;
         width: auto;
         cursor: pointer;
         transition: background 0.2s ease-in-out; }
         body .container .section .conduct:hover {
           background: #218BB6;
           color: #97D0ED; }
+        @media (max-width: 920px) {
+          body .container .section .conduct {
+            margin: 8px 40px; } }
+        @media (max-width: 500px) {
+          body .container .section .conduct {
+            margin: 8px 0; } }
       @media (max-width: 820px) {
         body .container .section {
           padding: 10px;
-          width: calc(100%); }
+          width: calc(100% - 40px); }
           body .container .section#home {
             padding: 40px 0; } }
     body .container .buffer {
@@ -412,17 +418,22 @@ body {
     background-position: center; }
     @media (max-width: 920px) {
       body #sponsor, body #faq {
-        background-size: 100% 100%; } }
+        background-size: 100% 100%;
+        margin-top: 40px;
+        background-color: #EDF6FA;
+        border-radius: 8px;
+        background-image: none; } }
     body #sponsor p, body #faq p {
       max-width: 600px; }
     @media (max-width: 500px) {
       body #sponsor, body #faq {
-        margin-left: -20px;
-        border-radius: 0; }
+        border-radius: 0;
+        width: calc(100% + 40px);
+        margin-left: -20px; }
         body #sponsor h2, body #faq h2 {
-          padding: 0 30px; }
+          padding: 0 20px; }
         body #sponsor p, body #faq p {
-          padding: 0 30px; } }
+          padding: 0 20px; } }
     body #sponsor .logo-grid, body #faq .logo-grid {
       margin: 0 auto;
       position: relative;
@@ -453,7 +464,7 @@ body {
     display: flex;
     flex-direction: row;
     width: calc(100% - 360px);
-    max-width: 600px;
+    max-width: 680px;
     padding: 0 180px; }
     @media (max-width: 920px) {
       body .faq-content {
@@ -464,8 +475,16 @@ body {
         padding: 0 30px;
         width: calc(100% - 60px); } }
     body .faq-content .column {
-      flex-grow: 1;
-      margin-right: 30px; }
+      width: 50%; }
+      body .faq-content .column.left {
+        margin-right: 30px; }
+      body .faq-content .column.right {
+        margin-right: 0; }
+      @media (max-width: 730px) {
+        body .faq-content .column {
+          width: 100%; }
+          body .faq-content .column.left {
+            margin-right: 0; } }
     body .faq-content .faq-item {
       width: 100%;
       font-size: 16px;
