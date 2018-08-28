@@ -251,7 +251,7 @@ body {
         }
 
         @media (max-width: breakpoint(large)) {
-          margin: 8px 40px;
+          margin: 8px 20px;
         }
 
         @media (max-width: breakpoint(small)) {
@@ -382,8 +382,8 @@ body {
     }
 
     @media (max-width: breakpoint(large)) {
-      h2 { padding: 0 40px; }
-      p { padding: 0 40px; }
+      h2 { padding: 0 20px; }
+      p { padding: 0 20px; }
     }
 
     @media (max-width: 820px) {
@@ -631,7 +631,7 @@ body {
     padding: 0 180px;
 
     @media (max-width: breakpoint(large)) {
-      padding: 0 40px;
+      padding: 0 20px;
       width: calc(100% - 80px);
     }
 
@@ -676,5 +676,101 @@ body {
       flex-direction: column;
     }
   }
+
+  .footer {
+    margin-top: 60px;
+    width: 100vw;
+    height: 42px;
+    padding: 12px 0;
+    background: get(background);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    bottom: 0;
+
+    .home {
+      height: 80px;
+      width: auto;
+      position: absolute;
+      left: 0;
+      margin-top: -20px;
+
+      img {
+        float: left;
+        height: 100%;
+        width: auto;
+
+        &#text {
+          @media (max-width: 800px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .links {
+      position: absolute;
+      right: 20px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .link-item {
+        font-size: 16px;
+        font-weight: 800;
+        color: get(oasis);
+        line-height: 32px;
+        padding: 0 4px;
+        border-radius: 4px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+
+        img {
+          background: white;
+          border-radius: 30px;
+        }
+
+        &:hover {
+          animation: spin 0.5s;
+
+          @keyframes spin {
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
+          }
+        }
+
+        &.apply {
+          font-size: 16px;
+          line-height: 36px;
+          background: get(oasis);
+          color: get(background);
+          border-radius: 4px;
+          padding: 0 30px;
+          margin: 0 0 0 15px;
+
+          &:hover {
+            background: get(lazuli);
+            color: get(cornflower);
+          }
+        }
+      }
+      .icon {
+        font-size: 28px;
+        display: none;
+        @media (max-width: 800px) {
+          display: block;
+        }
+      }
+      .stretch {
+        height: 38px;
+        line-height: 38px;
+      }
+    }
+  }
+
 
 }
