@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Cal Hacks 5.0</title>
-  <meta name="description" content="">
+  <meta name="description" content="It's time for round 5.0. The world's largest collegiate hackaton is back for its fifth anniversary!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel='stylesheet' href='./assets/style.css'>
 
   <!-- Google fonts. -->
-  <link href='https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:600,800' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Muli|Nunito+Sans:600,800' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Animate on scroll CSS library. -->
@@ -41,7 +41,7 @@
       <a href='#home' class='home'><img src='./assets/images/home_1.png'><img id='text' src='./assets/images/home_2.png'></a>
       <div class='nav'>
         <a href='#about' class='nav-item'>About</a>
-        <a href='#speakers' class='nav-item'>Speakers</a>
+        <a href='#inclusion' class='nav-item'>Inclusion</a>
         <a href='#sponsor' class='nav-item'>Sponsor</a>
         <a href='#faq' class='nav-item'>FAQ</a>
         <a href="javascript:void(0);" id='hamburger' class="icon" onclick="toggleMobileNav()">
@@ -51,7 +51,6 @@
         <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank">
           <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%">
         </a>
-
       </div>
     </div>
 
@@ -65,7 +64,7 @@
     <a href=''class='mobile-nav-item'></a>
     <a href=''class='mobile-nav-item'></a>
     <a href='#about' onclick="toggleMobileNav()" class='mobile-nav-item'>About</a>
-    <a href='#speakers' onclick="toggleMobileNav()" class='mobile-nav-item'>Speakers</a>
+    <a href='#inclusion' onclick="toggleMobileNav()" class='mobile-nav-item'>Inclusion</a>
     <a href='#sponsor' onclick="toggleMobileNav()" class='mobile-nav-item'>Sponsor</a>
     <a href='#faq' onclick="toggleMobileNav()" class='mobile-nav-item'>FAQ</a>
   </div>
@@ -102,15 +101,26 @@
 
     <div class='small-buffer'></div>
 
+    <!-- Inclusion, for code of conduct information. -->
+    <div class='section' id='inclusion' data-aos='fade-up'>
+      <h2> Inclusion </h2>
+      <p>
+        At Cal Hacks, it is a crucial aspect of our mission to embrace and promote inclusivity, accessibility, & ethicality.
+        All participants are expected to respect both our and MLH's Code of Conduct in order to facilitate a positive hackathon experience!
+      </p>
+      <a target='_blank' class='conduct'> Cal Hacks Code of Conduct </a>
+      <a href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf' target='_blank' class='conduct'> MLH Code of Conduct </a>
+    </div>
+
     <!-- Speakers. -->
-    <div class='section' id='speakers' data-aos='fade-up'>
+    <div class='section hidden' id='speakers' data-aos='fade-up'>
       <h2> Speakers </h2>
       <p>
         Leaders, mentors, sponsors, and other infulential members of the tech community come to Cal Hacks to interact and inspire. Stay tuned for this year’s speakers and judges!
       </p>
     </div>
 
-    <div class='carousel' data-aos='fade-up'>
+    <div class='carousel hidden' data-aos='fade-up'>
       <div class='overlay'></div>
       <div class='tile'>
         <div class='tile-photo'>

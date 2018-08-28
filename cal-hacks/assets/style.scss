@@ -1,5 +1,5 @@
 $colors: (
-  background: #A8D9F1, //#D0E7F3,
+  background: #A8D9F1,
   dark_background: #A4D6EF,
   cornflower: #97D0ED,
   french: #80C8DF,
@@ -38,9 +38,9 @@ body {
   justify-content: center;
   color: get(oasis);
   background: get(background);
-  font-family: Lato;
+  font-family: Muli;
   overflow-x: hidden;
-  // transform: translate(90px, 0);
+  font-weight: 400;
 
   a {
     &:link, &:hover, &:visited {
@@ -226,6 +226,31 @@ body {
       height: auto;
       display: table;
       width: calc(100% - 66px);
+
+      &.hidden {
+        display: none;
+      }
+
+      .conduct {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 40px;
+        background: #3B9BC2;
+        color: #A8D9F1;
+        border-radius: 4px;
+        padding: 0 30px;
+        font-weight: 800;
+        margin: 8px 180px;
+        width: auto;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+          background: get(lazuli);
+          color: get(cornflower);
+        }
+      }
+
       @media (max-width: 820px) {
         padding: 10px;
         width: calc(100%);
@@ -430,7 +455,7 @@ body {
 
   .node-3 {
     width: 103px;
-    top: 320px;
+    top: 270px;
     left: 130px;
     @media (max-width: 1050px) {
       left: 30px;
@@ -477,6 +502,10 @@ body {
     display: flex;
     position: relative;
     transform: translateX(-200px);
+
+    &.hidden {
+      display: none;
+    }
 
     @media (max-width: 1280px ){
       transform: translateX(0);
