@@ -127,6 +127,7 @@ body {
       justify-content: flex-end;
 
       .nav-item {
+        display: inline-block;
         font-size: 16px;
         font-weight: 800;
         color: get(oasis);
@@ -349,6 +350,7 @@ body {
       }
 
       .apply {
+        display: inline-block;
         font-family: Nunito Sans;
         font-weight: 600;
         width: 275px;

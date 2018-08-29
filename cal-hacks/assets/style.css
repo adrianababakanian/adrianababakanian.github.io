@@ -76,6 +76,7 @@ body {
       align-items: center;
       justify-content: flex-end; }
       body .header .nav .nav-item {
+        display: inline-block;
         font-size: 16px;
         font-weight: 800;
         color: #3B9BC2;
@@ -249,6 +250,7 @@ body {
         font-weight: 600;
         padding: 0; }
       body .container .title .apply {
+        display: inline-block;
         font-family: Nunito Sans;
         font-weight: 600;
         width: 275px;
