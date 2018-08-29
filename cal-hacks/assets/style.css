@@ -103,6 +103,9 @@ body {
           border-radius: 4px;
           padding: 0 30px;
           margin: 0 0 0 15px; }
+          @media (max-width: 800px) {
+            body .header .nav .nav-item.apply {
+              display: none; } }
           body .header .nav .nav-item.apply:hover {
             background: #218BB6;
             color: #97D0ED; }
@@ -169,6 +172,9 @@ body {
         width: auto;
         cursor: pointer;
         transition: background 0.2s ease-in-out; }
+        body .container .section .conduct.sponsor {
+          color: #C4E7F1;
+          display: inline-block; }
         body .container .section .conduct:hover {
           background: #218BB6;
           color: #97D0ED; }
@@ -180,7 +186,7 @@ body {
             margin: 8px 0; } }
       @media (max-width: 820px) {
         body .container .section {
-          padding: 10px;
+          padding: 66px 10px 0 10px;
           width: calc(100% - 40px); }
           body .container .section#home {
             padding: 40px 0; } }
@@ -380,14 +386,14 @@ body {
         right: 0; } }
   body .node-5 {
     width: 93px;
-    top: -50px;
+    top: -200px;
     left: 0; }
     @media (max-width: 920px) {
       body .node-5 {
         display: none; } }
   body .node-6 {
     width: 120px;
-    top: 0;
+    top: -100px;
     right: 80px; }
     @media (max-width: 920px) {
       body .node-6 {
@@ -438,11 +444,10 @@ body {
     background-size: 80% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 66px; }
+    margin-top: 30px; }
     @media (max-width: 920px) {
       body #sponsor, body #faq {
         background-size: 100% 100%;
-        margin-top: 66px;
         background-color: #EDF6FA;
         border-radius: 8px;
         background-image: none; } }
@@ -456,13 +461,14 @@ body {
         body #sponsor h2, body #faq h2 {
           padding: 0 20px; }
         body #sponsor p, body #faq p {
-          padding: 0 20px; } }
+          padding: 0 20px; }
+        body #sponsor .conduct.sponsor, body #faq .conduct.sponsor {
+          margin: 0 20px; } }
     body #sponsor .logo-grid, body #faq .logo-grid {
       margin: 0 auto;
       position: relative;
       width: calc(100% - 60px);
       max-width: 600px;
-      height: 500px;
       transform: translate(-20px, 0); }
       @media (max-width: 500px) {
         body #sponsor .logo-grid, body #faq .logo-grid {
@@ -517,10 +523,15 @@ body {
         body .faq-content .faq-item {
           font-size: 16px; } }
       body .faq-content .faq-item .question {
-        font-weight: 600; }
+        font-weight: 800;
+        display: inline-block;
+        border-bottom: 3px solid #EDF6FA;
+        color: #218BB6;
+        font-size: 18px; }
       body .faq-content .faq-item .answer {
         font-weight: 400;
-        padding: 6px 0; }
+        padding: 8px 0;
+        font-size: 16px; }
     @media (max-width: 650px) {
       body .faq-content {
         flex-direction: column; } }
