@@ -159,6 +159,14 @@ body {
       width: calc(100% - 66px); }
       body .container .section.hidden {
         display: none; }
+      body .container .section .fellowship {
+        width: 80px;
+        position: absolute;
+        right: 120px;
+        bottom: 74px; }
+        @media (max-width: 820px) {
+          body .container .section .fellowship {
+            display: none; } }
       body .container .section .conduct {
         display: inline-block;
         font-size: 16px;
@@ -201,6 +209,14 @@ body {
       @media (max-width: 920px) and (min-width: 820px) {
         body .container .buffer.first {
           height: 0; } }
+    body .container .extra-small-buffer {
+      width: 100%;
+      height: 5px;
+      background: transparent;
+      position: relative; }
+      @media (max-width: 820px) {
+        body .container .extra-small-buffer {
+          display: none; } }
     body .container .small-buffer {
       width: 100%;
       height: 60px;
@@ -228,6 +244,7 @@ body {
       body .container .title .main {
         margin: 0; }
       body .container .title .sub {
+        font-size: 24px;
         margin: 10px 0 0 40px;
         font-weight: 600;
         padding: 0; }
@@ -276,8 +293,16 @@ body {
       font-weight: 800;
       line-height: 60px; }
     body .container h2 {
+      font-family: Nunito Sans;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 34px;
+      max-width: 400px;
+      padding: 0 180px;
+      transition: padding 0.5s ease-in-out; }
+    body .container h3 {
       font-family: Muli;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 800;
       line-height: 30px;
       max-width: 400px;
@@ -288,7 +313,7 @@ body {
       font-size: 16px;
       font-weight: 400;
       line-height: 26px;
-      max-width: 475px;
+      max-width: 600px;
       padding: 0 180px;
       transition: padding 0.5s ease-in-out; }
     body .container p {
@@ -299,8 +324,13 @@ body {
       max-width: 475px;
       padding: 0 180px;
       transition: padding 0.5s ease-in-out; }
+      body .container p.sub {
+        font-size: 14px;
+        line-height: 20px; }
     @media (max-width: 920px) {
       body .container h2 {
+        padding: 0 20px; }
+      body .container h3 {
         padding: 0 20px; }
       body .container ul {
         padding: 0 20px; }
@@ -309,12 +339,17 @@ body {
     @media (max-width: 820px) {
       body .container h2 {
         max-width: 90%; }
+      body .container h3 {
+        max-width: 90%; }
       body .container ul {
         max-width: 90%; }
       body .container p {
         max-width: 90%; } }
     @media (max-width: 500px) {
       body .container h2 {
+        padding: 0;
+        font-size: 20px; }
+      body .container h3 {
         padding: 0;
         font-size: 20px; }
       body .container ul {
@@ -386,14 +421,14 @@ body {
         right: 0; } }
   body .node-5 {
     width: 93px;
-    top: -200px;
+    top: -150px;
     left: 0; }
     @media (max-width: 920px) {
       body .node-5 {
         display: none; } }
   body .node-6 {
     width: 120px;
-    top: -100px;
+    top: -90px;
     right: 80px; }
     @media (max-width: 920px) {
       body .node-6 {
