@@ -9,13 +9,13 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  color: #3B9BC2;
+  color: #0D739D;
   background: #A8D9F1;
   font-family: Muli;
   overflow-x: hidden;
   font-weight: 400; }
   body a:link, body a:hover, body a:visited, body a:focus {
-    color: #3B9BC2;
+    color: #0D739D;
     text-decoration: none;
     outline: 0;
     background: transparent;
@@ -79,7 +79,7 @@ body {
         display: inline-block;
         font-size: 16px;
         font-weight: 800;
-        color: #3B9BC2;
+        color: #0D739D;
         line-height: 32px;
         padding: 0 12px;
         border-radius: 4px;
@@ -87,10 +87,10 @@ body {
         transition: background 0.2s ease-in-out; }
         body .header .nav .nav-item:hover {
           background: #80C8DF;
-          color: #218BB6; }
+          color: #0D739D; }
         body .header .nav .nav-item:active {
           background: #80C8DF;
-          color: #218BB6; }
+          color: #0D739D; }
         @media (max-width: 800px) {
           body .header .nav .nav-item {
             display: none; }
@@ -99,7 +99,7 @@ body {
         body .header .nav .nav-item.apply {
           font-size: 16px;
           line-height: 36px;
-          background: #3B9BC2;
+          background: #0D739D;
           color: #A8D9F1;
           border-radius: 4px;
           padding: 0 30px;
@@ -108,7 +108,7 @@ body {
             body .header .nav .nav-item.apply {
               display: none; } }
           body .header .nav .nav-item.apply:hover {
-            background: #218BB6;
+            background: #3B9BC2;
             color: #97D0ED; }
       body .header .nav .icon {
         font-size: 28px;
@@ -139,7 +139,7 @@ body {
       display: block;
       font-size: 16px;
       font-weight: 600;
-      color: #3B9BC2;
+      color: #0D739D;
       width: 100vw;
       padding: 20px 0;
       text-align: center; }
@@ -185,8 +185,7 @@ body {
           color: #C4E7F1;
           display: inline-block; }
         body .container .section .conduct:hover {
-          background: #218BB6;
-          color: #97D0ED; }
+          background: #0D739D; }
         @media (max-width: 920px) {
           body .container .section .conduct {
             margin: 8px 20px; } }
@@ -259,13 +258,13 @@ body {
         font-size: 24px;
         color: #A8D9F1;
         line-height: 46px;
-        background: #3B9BC2;
+        background: #0D739D;
         border-radius: 4px;
         margin: 20px 0 0 80px;
         cursor: pointer;
         transition: 0.2s ease-in-out; }
         body .container .title .apply:hover {
-          background: #218BB6;
+          background: #3B9BC2;
           color: #97D0ED; }
       @media (max-width: 920px) {
         body .container .title {
@@ -558,12 +557,13 @@ body {
       padding: 20px 0; }
       @media (max-width: 500px) {
         body .faq-content .faq-item {
-          font-size: 16px; } }
+          font-size: 16px;
+          margin-left: -10px; } }
       body .faq-content .faq-item .question {
         font-weight: 800;
         display: inline-block;
         border-bottom: 3px solid #EDF6FA;
-        color: #218BB6;
+        color: #0D739D;
         font-size: 18px; }
       body .faq-content .faq-item .answer {
         font-weight: 400;
@@ -606,7 +606,7 @@ body {
       body .footer .links .link-item {
         font-size: 16px;
         font-weight: 800;
-        color: #3B9BC2;
+        color: #0D739D;
         line-height: 32px;
         padding: 0 4px;
         border-radius: 4px;
@@ -627,13 +627,13 @@ body {
         body .footer .links .link-item.apply {
           font-size: 16px;
           line-height: 36px;
-          background: #3B9BC2;
+          background: #0D739D;
           color: #A8D9F1;
           border-radius: 4px;
           padding: 0 30px;
           margin: 0 0 0 15px; }
           body .footer .links .link-item.apply:hover {
-            background: #218BB6;
+            background: #0D739D;
             color: #97D0ED; }
       body .footer .links .icon {
         font-size: 28px;

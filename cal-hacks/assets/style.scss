@@ -5,7 +5,7 @@ $colors: (
   french: #80C8DF,
   french_trans: #A3DAEC,
   lazuli_trans: rgba(59,155,194,0.2),
-  lazuli: #218BB6,
+  lazuli: #0D739D,
   oasis: #3B9BC2,
   dust: #EDF6FA,
   dark_dust: #C4E7F1,
@@ -38,7 +38,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  color: get(oasis);
+  color: get(lazuli);
   background: get(background);
   font-family: Muli;
   overflow-x: hidden;
@@ -46,7 +46,7 @@ body {
 
   a {
     &:link, &:hover, &:visited, &:focus {
-      color: get(oasis);
+      color: get(lazuli);
       text-decoration: none;
       outline: 0;
       background: transparent;
@@ -130,7 +130,7 @@ body {
         display: inline-block;
         font-size: 16px;
         font-weight: 800;
-        color: get(oasis);
+        color: get(lazuli);
         line-height: 32px;
         padding: 0 12px;
         border-radius: 4px;
@@ -155,7 +155,7 @@ body {
         &.apply {
           font-size: 16px;
           line-height: 36px;
-          background: get(oasis);
+          background: get(lazuli);
           color: get(background);
           border-radius: 4px;
           padding: 0 30px;
@@ -166,7 +166,7 @@ body {
           }
 
           &:hover {
-            background: get(lazuli);
+            background: get(oasis);
             color: get(cornflower);
           }
         }
@@ -210,7 +210,7 @@ body {
       display: block;
       font-size: 16px;
       font-weight: 600;
-      color: get(oasis);
+      color: get(lazuli);
       width: 100vw;
       padding: 20px 0;
       text-align: center;
@@ -255,8 +255,8 @@ body {
         display: inline-block;
         font-size: 16px;
         line-height: 40px;
-        background: #3B9BC2;
-        color: #A8D9F1;
+        background: get(oasis);
+        color: get(background);
         border-radius: 4px;
         padding: 0 30px;
         font-weight: 800;
@@ -272,7 +272,6 @@ body {
 
         &:hover {
           background: get(lazuli);
-          color: get(cornflower);
         }
 
         @media (max-width: breakpoint(large)) {
@@ -359,14 +358,14 @@ body {
         font-size: 24px;
         color: get(background);
         line-height: 46px;
-        background: get(oasis);
+        background: get(lazuli);
         border-radius: 4px;
         margin: 20px 0 0 80px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
 
         &:hover {
-          background: get(lazuli);
+          background: get(oasis);
           color: get(cornflower);
         }
       }
@@ -731,6 +730,7 @@ body {
       padding: 20px 0;
       @media (max-width: breakpoint(small)) {
         font-size: 16px;
+        margin-left: -10px;
       }
 
       .question {
@@ -796,7 +796,7 @@ body {
       .link-item {
         font-size: 16px;
         font-weight: 800;
-        color: get(oasis);
+        color: get(lazuli);
         line-height: 32px;
         padding: 0 4px;
         border-radius: 4px;
@@ -822,7 +822,7 @@ body {
         &.apply {
           font-size: 16px;
           line-height: 36px;
-          background: get(oasis);
+          background: get(lazuli);
           color: get(background);
           border-radius: 4px;
           padding: 0 30px;
