@@ -38,15 +38,17 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  color: get(lazuli);
+  color: get(oasis);
   background: get(background);
   font-family: Muli;
   overflow-x: hidden;
   font-weight: 400;
 
+  p { color: get(lazuli); }
+
   a {
     &:link, &:hover, &:visited, &:focus {
-      color: get(lazuli);
+      color: get(oasis);
       text-decoration: none;
       outline: 0;
       background: transparent;
@@ -130,12 +132,14 @@ body {
         display: inline-block;
         font-size: 16px;
         font-weight: 800;
-        color: get(lazuli);
+        color: get(oasis);
         line-height: 32px;
         padding: 0 12px;
         border-radius: 4px;
         cursor: pointer;
         transition: background 0.2s ease-in-out;
+        font-family: Nunito Sans;
+        font-weight: 600;
 
         &:hover {
           background: get(french);
@@ -155,18 +159,20 @@ body {
         &.apply {
           font-size: 16px;
           line-height: 36px;
-          background: get(lazuli);
+          background: get(oasis);
           color: get(background);
           border-radius: 4px;
           padding: 0 30px;
           margin: 0 0 0 15px;
+          font-family: Nunito Sans;
+          font-weight: 600;
 
           @media (max-width: 800px) {
             display: none;
           }
 
           &:hover {
-            background: get(oasis);
+            background: get(lazuli);
             color: get(cornflower);
           }
         }
@@ -210,10 +216,12 @@ body {
       display: block;
       font-size: 16px;
       font-weight: 600;
-      color: get(lazuli);
+      color: get(oasis);
       width: 100vw;
       padding: 20px 0;
       text-align: center;
+      font-family: Nunito Sans;
+      font-weight: 600;
       &:hover {
         font-weight: 800;
       }
@@ -346,6 +354,8 @@ body {
         margin: 10px 0 0 40px;
         font-weight: 600;
         padding: 0;
+        font-family: Nunito Sans;
+        font-weight: 600;
       }
 
       .apply {
@@ -358,14 +368,14 @@ body {
         font-size: 24px;
         color: get(background);
         line-height: 46px;
-        background: get(lazuli);
+        background: get(oasis);
         border-radius: 4px;
         margin: 20px 0 0 80px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
 
         &:hover {
-          background: get(oasis);
+          background: get(lazuli);
           color: get(cornflower);
         }
       }
@@ -377,7 +387,7 @@ body {
       }
 
       @media (max-width: 820px) {
-        margin-top: 30px;
+        margin-top: 40px;
       }
 
       @media (max-width: breakpoint(small)) {
@@ -406,7 +416,7 @@ body {
     }
 
     h3 {
-      font-family: Muli;
+      font-family: Nunito Sans;
       font-size: 20px;
       font-weight: 800;
       line-height: 30px;
@@ -456,7 +466,7 @@ body {
 
     @media (max-width: breakpoint(small)) {
       h2 { padding: 0; font-size: 20px; }
-      h3 { padding: 0; font-size: 20px; }
+      h3 { padding: 0; font-size: 18px; }
       ul { padding: 0; font-size: 20px; }
       p { padding: 0; font-size: 16px; }
     }
@@ -737,7 +747,7 @@ body {
         font-weight: 800;
         display: inline-block;
         border-bottom: 3px solid get(dust);
-        color: get(lazuli);
+        color: get(oasis);
         font-size: 18px;
       }
 
@@ -796,7 +806,7 @@ body {
       .link-item {
         font-size: 16px;
         font-weight: 800;
-        color: get(lazuli);
+        color: get(oasis);
         line-height: 32px;
         padding: 0 4px;
         border-radius: 4px;
