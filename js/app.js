@@ -1,3 +1,5 @@
+window.location.replace("http://adrianababakanian.io");
+
 $(document).ready(function(){
 
     function processAjaxData(response, urlPath){
@@ -19,24 +21,6 @@ $(document).ready(function(){
         queue: false
       }).css('display', 'none').slideDown(1000, "linear");
     });
-
-    // Dropdown Animations
-
-    // $('.dropdown').click(function() {
-    //     $('.dropdown-content').fadeToggle(200,"linear");
-    //     $(".bar").toggleClass("act");
-    //     $(".terminal").removeClass("shift");
-    // });
-    //
-    // $('.dropdown_alt').click(function() {
-    //     $('.dropdown-content_alt').toggle();
-    //     $(".bar_alt").toggleClass("act_alt");
-    //     $(".home").toggleClass("hide");
-    // });
-    //
-    // $('.home').click(function() {
-    //     $(".dropdown_alt").toggleClass("hide");
-    // });
 
     // Terminal Animations
 
